@@ -1,4 +1,4 @@
-
+-- Extend the input based on the instruction type
 ARCHITECTURE rtl OF extend IS
 BEGIN
 

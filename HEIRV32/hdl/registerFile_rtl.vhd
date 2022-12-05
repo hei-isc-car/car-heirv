@@ -1,4 +1,7 @@
-
+-- Handles x0 to x31 (read/write to RD1/RD2)
+-- x0 is always 0
+-- x30 is linked to leds
+-- x31 is linked to the buttons
 ARCHITECTURE rtl OF registerFile IS
     -- Bank of register
     type t_registersBank is array (31 downto 0) of

@@ -1,5 +1,5 @@
 -- Risc-V ed. 2022 page 250 (pdf page 273)
-
+-- ALU operations on inputs
 ARCHITECTURE rtl OF ALU IS
 
     signal lvec_res : std_ulogic_vector(res'range);
