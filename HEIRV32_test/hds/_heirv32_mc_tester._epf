@@ -1,0 +1,2 @@
+DEFAULT_FILE atom heirv32_mc_tester_test_EBS3.vhd
+DEFAULT_ARCHITECTURE atom test_EBS3
