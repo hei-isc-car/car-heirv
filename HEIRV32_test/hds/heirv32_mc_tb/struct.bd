@@ -69,23 +69,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hdl"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.info"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.user"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
 )
 (vvPair
 variable "appl"
@@ -105,11 +105,11 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
 )
 (vvPair
 variable "date"
@@ -165,7 +165,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:41:19"
+value "11:02:10"
 )
 (vvPair
 variable "group"
@@ -209,11 +209,11 @@ value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-heirv-students\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
+value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -241,7 +241,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:41:19"
+value "11:02:10"
 )
 (vvPair
 variable "unit"
@@ -1682,8 +1682,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1921,1056"
-viewArea "-1300,-1400,88429,46300"
+windowSize "-8,-8,1928,1048"
+viewArea "-1264,-1365,87757,45543"
 cachedDiagramExtent "0,0,86000,40400"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -1707,7 +1707,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1339,0
+lastUid 1316,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
