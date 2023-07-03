@@ -70,7 +70,7 @@ port (LogicalPort
 lang 11
 decl (Decl
 n "adr"
-t "unsigned"
+t "std_ulogic_vector"
 b "(g_dataWidth-1 DOWNTO 0)"
 o 1
 suid 1,0
@@ -598,19 +598,19 @@ value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32\\MultiCycle\\hds\\instructionDataM
 )
 (vvPair
 variable "date"
-value "07.03.2023"
+value "03.07.2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "07"
+value "03"
 )
 (vvPair
 variable "entity_name"
@@ -638,7 +638,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "07.03.2023"
+value "03.07.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -650,7 +650,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "08:54:11"
+value "08:23:39"
 )
 (vvPair
 variable "group"
@@ -678,7 +678,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32/MultiCycle/work"
 )
 (vvPair
 variable "mm"
-value "03"
+value "07"
 )
 (vvPair
 variable "module_name"
@@ -686,11 +686,11 @@ value "instructionDataManager"
 )
 (vvPair
 variable "month"
-value "mars"
+value "juil."
 )
 (vvPair
 variable "month_long"
-value "mars"
+value "juillet"
 )
 (vvPair
 variable "p"
@@ -726,7 +726,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "08:54:11"
+value "08:23:39"
 )
 (vvPair
 variable "unit"
@@ -792,15 +792,15 @@ uid 55,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,74000,3200"
-st "adr         : IN     unsigned (g_dataWidth-1 DOWNTO 0) ;
+xt "44000,2400,78500,3200"
+st "adr         : IN     std_ulogic_vector (g_dataWidth-1 DOWNTO 0) ;
 "
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "adr"
-t "unsigned"
+t "std_ulogic_vector"
 b "(g_dataWidth-1 DOWNTO 0)"
 o 1
 suid 1,0
@@ -1954,7 +1954,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 341,0
+lastUid 364,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"

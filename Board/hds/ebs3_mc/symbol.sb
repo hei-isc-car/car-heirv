@@ -448,7 +448,7 @@ uid 213,0
 generic (GiElement
 name "c_programFile"
 type "string"
-value "\"$SIMULATION_DIR/code_mc_ebs3_bram.txt\""
+value "\"$SIMULATION_DIR/code_mc_ebs3_NO_IJ_bram.txt\""
 )
 uid 215,0
 )
@@ -641,19 +641,19 @@ value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc"
 )
 (vvPair
 variable "date"
-value "07.03.2023"
+value "16.06.2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "07"
+value "16"
 )
 (vvPair
 variable "entity_name"
@@ -681,7 +681,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "07.03.2023"
+value "16.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -693,7 +693,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "07:34:25"
+value "09:50:09"
 )
 (vvPair
 variable "group"
@@ -721,7 +721,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "03"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -729,11 +729,11 @@ value "ebs3_mc"
 )
 (vvPair
 variable "month"
-value "mars"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mars"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -769,7 +769,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "07:34:25"
+value "09:50:09"
 )
 (vvPair
 variable "unit"
@@ -837,8 +837,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8800,61500,9600"
-st "heartbeat : OUT    std_uLogic  ;
-"
+st "heartbeat : OUT    std_uLogic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -884,8 +883,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,10400,60500,11200"
-st "sys_en    : OUT    std_ulogic 
-"
+st "sys_en    : OUT    std_ulogic "
 )
 thePort (LogicalPort
 lang 11
@@ -931,8 +929,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,61500,4000"
-st "clk       : IN     std_uLogic  ;
-"
+st "clk       : IN     std_uLogic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -976,8 +973,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,61500,4800"
-st "en_full_n : IN     std_ulogic  ;
-"
+st "en_full_n : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1023,8 +1019,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8000,72000,8800"
-st "dbg_leds  : OUT    std_ulogic_vector (31 DOWNTO 0) ;
-"
+st "dbg_leds  : OUT    std_ulogic_vector (31 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1071,8 +1066,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,61500,6400"
-st "rst_n     : IN     std_uLogic  ;
-"
+st "rst_n     : IN     std_uLogic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1116,8 +1110,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,61500,5600"
-st "en_step_n : IN     std_ulogic  ;
-"
+st "en_step_n : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1162,8 +1155,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,76000,3200"
-st "btns      : IN     std_ulogic_vector (c_btnsNb-1 DOWNTO 0) ;
-"
+st "btns      : IN     std_ulogic_vector (c_btnsNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1210,8 +1202,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,9600,77500,10400"
-st "leds      : OUT    std_ulogic_vector (c_dataWidth-1 DOWNTO 0) ;
-"
+st "leds      : OUT    std_ulogic_vector (c_dataWidth-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1259,8 +1250,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,6400,61500,7200"
-st "LED_G     : OUT    std_uLogic  ;
-"
+st "LED_G     : OUT    std_uLogic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1306,8 +1296,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,7200,61500,8000"
-st "LED_R     : OUT    std_uLogic  ;
-"
+st "LED_R     : OUT    std_uLogic  ;"
 )
 thePort (LogicalPort
 m 1
@@ -1364,13 +1353,14 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "0,12000,36500,16800"
+xt "0,12000,39500,16800"
 st "Generic Declarations
 
-c_btnsNb           positive 2                                        
-c_clockFrequencyHz positive 50000000                                 
-c_dataWidth        positive 32                                       
-c_programFile      string   \"$SIMULATION_DIR/code_mc_ebs3_bram.txt\"  "
+c_btnsNb           positive 2                                              
+c_clockFrequencyHz positive 50000000                                       
+c_dataWidth        positive 32                                             
+c_programFile      string   \"$SIMULATION_DIR/code_mc_ebs3_NO_IJ_bram.txt\"  
+"
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
@@ -1394,7 +1384,7 @@ value "32"
 (GiElement
 name "c_programFile"
 type "string"
-value "\"$SIMULATION_DIR/code_mc_ebs3_bram.txt\""
+value "\"$SIMULATION_DIR/code_mc_ebs3_NO_IJ_bram.txt\""
 )
 ]
 )
@@ -2050,6 +2040,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 843,0
+lastUid 866,0
 activeModelName "Symbol:CDM"
 )

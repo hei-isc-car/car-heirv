@@ -2963,7 +2963,7 @@ second ""
 )
 (pair
 first "hierLevel"
-second "3"
+second "1"
 )
 (pair
 first "onPulldownMenu"
@@ -4341,7 +4341,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "1009x663+599+233"
+logWindowGeometry "1009x663+-1249+208"
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0
@@ -6448,15 +6448,11 @@ activeSidePanelTab 2
 activeLibraryTab 1
 sidePanelSize 278
 showUnixHiddenFiles 0
-componentBrowserXpos 1374
-componentBrowserYpos 175
+componentBrowserXpos 255
+componentBrowserYpos 171
 componentBrowserWidth 542
 componentBrowserHeight 650
 componentBrowserLibraryNames [
-"HEIRV32"
-"HEIRV32_MC"
-"gates"
-"sequential"
 ]
 )
 (SmPreferences

@@ -21,7 +21,7 @@ onShortcutBar 0
 onPulldownMenu 0
 onToolbar 1
 enabled 1
-hierDepth 3
+hierDepth 1
 subTasks [
 (HDSTool
 hasAssociatedFileExt 0

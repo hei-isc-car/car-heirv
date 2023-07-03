@@ -215,25 +215,25 @@ uid 469,0
 )
 *28 (MRCItem
 litem &16
-pos 2
+pos 5
 dimension 20
 uid 3869,0
 )
 *29 (MRCItem
 litem &17
-pos 3
+pos 2
 dimension 20
 uid 4129,0
 )
 *30 (MRCItem
 litem &18
-pos 4
+pos 3
 dimension 20
 uid 4761,0
 )
 *31 (MRCItem
 litem &19
-pos 5
+pos 4
 dimension 20
 uid 4763,0
 )
@@ -558,7 +558,7 @@ value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32\\MultiCycle\\hds\\heirv32_mc"
 )
 (vvPair
 variable "date"
-value "05.06.2023"
+value "03.07.2023"
 )
 (vvPair
 variable "day"
@@ -570,7 +570,7 @@ value "lundi"
 )
 (vvPair
 variable "dd"
-value "05"
+value "03"
 )
 (vvPair
 variable "entity_name"
@@ -598,7 +598,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "05.06.2023"
+value "03.07.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -610,7 +610,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:43:12"
+value "08:52:59"
 )
 (vvPair
 variable "group"
@@ -638,7 +638,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32/MultiCycle/work"
 )
 (vvPair
 variable "mm"
-value "06"
+value "07"
 )
 (vvPair
 variable "module_name"
@@ -646,11 +646,11 @@ value "heirv32_mc"
 )
 (vvPair
 variable "month"
-value "juin"
+value "juil."
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "juillet"
 )
 (vvPair
 variable "p"
@@ -686,7 +686,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:43:12"
+value "08:52:59"
 )
 (vvPair
 variable "unit"
@@ -1150,7 +1150,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,47600,49000"
+xt "36200,48000,47500,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1773,7 +1773,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 5243,0
+lastUid 5588,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"
