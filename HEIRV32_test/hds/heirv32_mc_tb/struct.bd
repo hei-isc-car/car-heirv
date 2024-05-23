@@ -74,23 +74,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hdl"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.info"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.user"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
 )
 (vvPair
 variable "appl"
@@ -110,27 +110,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
 )
 (vvPair
 variable "date"
-value "03.07.2023"
+value "23/05/2024"
 )
 (vvPair
 variable "day"
-value "lun."
+value "jeu."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "jeudi"
 )
 (vvPair
 variable "dd"
-value "03"
+value "23"
 )
 (vvPair
 variable "entity_name"
@@ -154,11 +154,11 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "03.07.2023"
+value "23/05/2024"
 )
 (vvPair
 variable "graphical_source_group"
@@ -166,11 +166,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:16:14"
+value "09:46:19"
 )
 (vvPair
 variable "group"
@@ -178,7 +178,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "language"
@@ -198,7 +198,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32_test/work"
 )
 (vvPair
 variable "mm"
-value "07"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -206,19 +206,19 @@ value "heirv32_mc_tb"
 )
 (vvPair
 variable "month"
-value "juil."
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "juillet"
+value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -246,7 +246,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "09:16:14"
+value "09:46:19"
 )
 (vvPair
 variable "unit"
@@ -254,7 +254,7 @@ value "heirv32_mc_tb"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "version"
@@ -266,11 +266,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2023"
+value "2024"
 )
 (vvPair
 variable "yy"
-value "23"
+value "24"
 )
 ]
 )
@@ -626,8 +626,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "17000,7800,30500,8600"
-st "SIGNAL clk  : std_ulogic
-"
+st "SIGNAL clk  : std_ulogic"
 )
 )
 *13 (Net
@@ -645,8 +644,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "17000,9400,30500,10200"
-st "SIGNAL rst  : std_ulogic
-"
+st "SIGNAL rst  : std_ulogic"
 )
 )
 *14 (Net
@@ -664,8 +662,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "17000,8600,30500,9400"
-st "SIGNAL en   : std_ulogic
-"
+st "SIGNAL en   : std_ulogic"
 )
 )
 *15 (Net
@@ -684,8 +681,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "17000,7000,45500,7800"
-st "SIGNAL btns : std_ulogic_vector(c_btnsNb -1 DOWNTO 0)
-"
+st "SIGNAL btns : std_ulogic_vector(c_btnsNb -1 DOWNTO 0)"
 )
 )
 *16 (SaComponent
@@ -1072,8 +1068,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "17000,10200,53000,11000"
-st "SIGNAL test : std_ulogic_vector(32+3+2+2+1+1+1+2+1+1+2 - 1 downto 0)
-"
+st "SIGNAL test : std_ulogic_vector(32+3+2+2+1+1+1+2+1+1+2 - 1 downto 0)"
 )
 )
 *28 (SaComponent
@@ -1670,8 +1665,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1921,1056"
-viewArea "-1276,-1480,87774,45859"
+windowSize "-8,-8,1928,1160"
+viewArea "-1264,-1466,87757,51279"
 cachedDiagramExtent "0,-200,86000,43200"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -1695,7 +1690,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1392,0
+lastUid 1415,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

@@ -266,23 +266,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hdl"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd.info"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd.user"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "appl"
@@ -302,27 +302,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc"
 )
 (vvPair
 variable "date"
-value "27.06.2023"
+value "23/05/2024"
 )
 (vvPair
 variable "day"
-value "mar."
+value "jeu."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "jeudi"
 )
 (vvPair
 variable "dd"
-value "27"
+value "23"
 )
 (vvPair
 variable "entity_name"
@@ -346,11 +346,11 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "27.06.2023"
+value "23/05/2024"
 )
 (vvPair
 variable "graphical_source_group"
@@ -358,11 +358,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:43:43"
+value "09:46:10"
 )
 (vvPair
 variable "group"
@@ -370,7 +370,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "language"
@@ -390,7 +390,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "06"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -398,19 +398,19 @@ value "ebs3_mc"
 )
 (vvPair
 variable "month"
-value "juin"
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -438,7 +438,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:43:43"
+value "09:46:10"
 )
 (vvPair
 variable "unit"
@@ -446,7 +446,7 @@ value "ebs3_mc"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "version"
@@ -458,11 +458,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2023"
+value "2024"
 )
 (vvPair
 variable "yy"
-value "23"
+value "24"
 )
 ]
 )
@@ -6927,8 +6927,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1048"
-viewArea "-11100,-2000,170602,93745"
+windowSize "-8,-8,1928,1160"
+viewArea "-1890,-1890,158251,92994"
 cachedDiagramExtent "0,0,130500,91000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -6952,7 +6952,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 3546,0
+lastUid 3609,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

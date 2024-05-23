@@ -1199,8 +1199,8 @@ second "uedit32.exe \"%(p)/%(l)\" /r"
 )
 ]
 defaultTextPrintingCmd "Enscript"
-win32DefaultEditor "Notepad++"
-win32DefaultViewer "Notepad++"
+win32DefaultEditor "Sublime Text"
+win32DefaultViewer "Sublime Text"
 unixDefaultEditor "Builtin"
 unixDefaultViewer "Builtin"
 defaultLanguage 11
@@ -6444,7 +6444,7 @@ displayHierarchy 0
 xPos 0
 yPos 0
 width 1936
-height 1056
+height 1168
 activeSidePanelTab 2
 activeLibraryTab 1
 sidePanelSize 278

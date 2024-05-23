@@ -40,25 +40,25 @@ ARCHITECTURE studentVersion OF heirv32_mc_tester IS
     std.textio.write(std.textio.output, LF & "===================" & LF);
     std.textio.write(std.textio.output, "Testing " & msg  & LF);
     assert (adr_u = AdrArg)
-      report ("Adr error - expected " & to_hstring(adr_u)) severity error;
+      report ("Adr error - expected " & to_hstring(AdrArg) & " got " & to_hstring(adr_u)) severity error;
     assert (ALUControl = ALUControlArg)
-      report ("ALUControl error - expected " & to_string(ALUControlArg)) severity error;
+      report ("ALUControl error - expected " & to_string(ALUControlArg) & " got " & to_string(ALUControl)) severity error;
     assert (ALUSrcA = ALUSrcAArg)
-      report ("ALUSrcA error - expected " & to_string(ALUSrcAArg)) severity error;
+      report ("ALUSrcA error - expected " & to_string(ALUSrcAArg) & " got " & to_string(ALUSrcA)) severity error;
     assert (ALUSrcB = ALUSrcBArg)
-      report ("ALUSrcB error - expected " & to_string(ALUSrcBArg)) severity error;
+      report ("ALUSrcB error - expected " & to_string(ALUSrcBArg) & " got " & to_string(ALUSrcB)) severity error;
     assert (IRWrite = IRWriteArg)
-      report ("IRWrite error - expected " & to_string(IRWriteArg)) severity error;
+      report ("IRWrite error - expected " & to_string(IRWriteArg) & " got " & to_string(IRWrite)) severity error;
     assert (PCWrite = PCWriteArg)
-      report ("PCWrite error - expected " & to_string(PCWriteArg)) severity error;
+      report ("PCWrite error - expected " & to_string(PCWriteArg) & " got " & to_string(PCWrite)) severity error;
     assert (adrSrc = adrSrcArg)
-      report ("adrSrc error - expected " & to_string(adrSrcArg)) severity error;
+      report ("adrSrc error - expected " & to_string(adrSrcArg) & " got " & to_string(adrSrc)) severity error;
     assert (immSrc = immSrcArg)
-      report ("immSrc error - expected " & to_string(immSrcArg)) severity error;
+      report ("immSrc error - expected " & to_string(immSrcArg) & " got " & to_string(immSrc)) severity error;
     assert (memWrite = memWriteArg)
-      report ("memWrite error - expected " & to_string(memWriteArg)) severity error;
+      report ("memWrite error - expected " & to_string(memWriteArg) & " got " & to_string(memWrite)) severity error;
     assert (regwrite = regwriteArg)
-      report ("regwrite error - expected " & to_string(regwriteArg)) severity error;
+      report ("regwrite error - expected " & to_string(regwriteArg) & " got " & to_string(regwrite)) severity error;
     assert (resultSrc = resultSrcArg)
       report ("resultSrc error - expected " & to_string(resultSrcArg)) severity error;
     if (adr_u = AdrArg) AND (ALUControl = ALUControlArg) AND (ALUSrcA = ALUSrcAArg) AND (ALUSrcB = ALUSrcBArg) AND
