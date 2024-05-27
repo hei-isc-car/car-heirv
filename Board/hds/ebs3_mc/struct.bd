@@ -310,19 +310,19 @@ value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc"
 )
 (vvPair
 variable "date"
-value "23/05/2024"
+value "27/05/2024"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "23"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -350,7 +350,7 @@ value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "23/05/2024"
+value "27/05/2024"
 )
 (vvPair
 variable "graphical_source_group"
@@ -362,7 +362,7 @@ value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:46:10"
+value "16:33:29"
 )
 (vvPair
 variable "group"
@@ -438,7 +438,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "09:46:10"
+value "16:33:29"
 )
 (vvPair
 variable "unit"
@@ -6927,8 +6927,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1160"
-viewArea "-1890,-1890,158251,92994"
+windowSize "1,1,1919,1151"
+viewArea "-1900,-1900,158650,92530"
 cachedDiagramExtent "0,0,130500,91000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -6952,7 +6952,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 3609,0
+lastUid 3672,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -8658,7 +8658,7 @@ uid 860,0
 generic (GiElement
 name "c_programFile"
 type "string"
-value "\"$SIMULATION_DIR/code_mc_ebs3_NO_IJ_bram.txt\""
+value "\"$SIMULATION_DIR/code_mc_ebs3_bram.txt\""
 )
 uid 862,0
 )
