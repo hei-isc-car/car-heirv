@@ -101,129 +101,128 @@ BEGIN
     wait for 0.1*clockPeriod;
     sReset <= '0';
 
-    -- First addi has not the same immSrc (based upon last instr.)
-    -- Depends if you used '--' for some blocks or forced signals to 0
-    -- If so, modify this line and the last from the loop
+  -- First addi has not the same immSrc (based upon last instr.)
+  -- Depends if you used '--' for some blocks or forced signals to 0
+  -- If so, modify this line and the last from the loop
     testInfo <= pad("Addi, addr. 0x00", testInfo'length);
     en <= '1';
     checkProc("Addi, addr. 0x00 - fetch", x"00000000", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
 
     while true loop
-
       testInfo <= pad("Addi, addr. 0x00", testInfo'length);
       checkProc("Addi, addr. 0x00 - decode", x"00000004", "000", "01", "01", '0', '0', '0', "00", '0', '0', "00");
       checkProc("Addi, addr. 0x00 - executeI", x"00000004", "000", "10", "01", '0', '0', '0', "00", '0', '0', "00");
       checkProc("Addi, addr. 0x00 - aluWB", x"00000004", "000", "00", "00", '0', '0', '0', "00", '0', '1', "00");
 
       testInfo <= pad("Addi, addr. 0x04", testInfo'length);
-      checkProc("Addi, addr. 0x04 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Addi, addr. 0x04 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Addi, addr. 0x04 - executeI", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Addi, addr. 0x04 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Addi, addr. 0x04 - fetch", x"00000004", "000", "00", "10", '1', '1', '0', "00", '0', '0', "10");
+      checkProc("Addi, addr. 0x04 - decode", x"00000008", "000", "01", "01", '0', '0', '0', "00", '0', '0', "00");
+      checkProc("Addi, addr. 0x04 - executeI", x"00000008", "000", "10", "01", '0', '0', '0', "00", '0', '0', "00");
+      checkProc("Addi, addr. 0x04 - aluWB", x"00000008", "000", "00", "00", '0', '0', '0', "00", '0', '1', "00");
 
       testInfo <= pad("Addi, addr. 0x08", testInfo'length);
-      checkProc("Addi, addr. 0x08 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Addi, addr. 0x08 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Addi, addr. 0x08 - executeI", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Addi, addr. 0x08 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Addi, addr. 0x08 - fetch", x"00000008", "000", "00", "10", '1', '1', '0', "00", '0', '0', "10");
+      checkProc("Addi, addr. 0x08 - decode", x"0000000C", "000", "01", "01", '0', '0', '0', "00", '0', '0', "00");
+      checkProc("Addi, addr. 0x08 - executeI", x"0000000C", "000", "10", "01", '0', '0', '0', "00", '0', '0', "00");
+      checkProc("Addi, addr. 0x08 - aluWB", x"0000000C", "000", "00", "00", '0', '0', '0', "00", '0', '1', "00");
 
       testInfo <= pad("Or, addr. 0x0C", testInfo'length);
-      checkProc("Or, addr. 0x0C - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Or, addr. 0x0C - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Or, addr. 0x0C - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Or, addr. 0x0C - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Or, addr. 0x0C - fetch", x"0000000C", "000", "00", "10", '1', '1', '0', "00", '0', '0', "10");
+      checkProc("Or, addr. 0x0C - decode", x"00000010", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Or, addr. 0x0C - executeR", x"00000010", "011", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Or, addr. 0x0C - aluWB", x"00000010", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("And, addr. 0x10", testInfo'length);
-      checkProc("And, addr. 0x10 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("And, addr. 0x10 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("And, addr. 0x10 - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("And, addr. 0x10 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("And, addr. 0x10 - fetch", x"00000010", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("And, addr. 0x10 - decode", x"00000014", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("And, addr. 0x10 - executeR", x"00000014", "010", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("And, addr. 0x10 - aluWB", x"00000014", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Add, addr. 0x14", testInfo'length);
-      checkProc("Add, addr. 0x14 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x14 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x14 - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x14 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Add, addr. 0x14 - fetch", x"00000014", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Add, addr. 0x14 - decode", x"00000018", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x14 - executeR", x"00000018", "000", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x14 - aluWB", x"00000018", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Beq, addr. 0x18", testInfo'length);
-      checkProc("Beq, addr. 0x18 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Beq, addr. 0x18 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Beq, addr. 0x18 - BEQ", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Beq, addr. 0x18 - fetch", x"00000018", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Beq, addr. 0x18 - decode", x"0000001C", "000", "01", "01", '0', '0', '0', "10", '0', '0', "00");
+      checkProc("Beq, addr. 0x18 - BEQ", x"0000001C", "001", "10", "00", '0', '0', '0', "10", '0', '0', "00");
 
       testInfo <= pad("Slt, addr. 0x1C", testInfo'length);
-      checkProc("Slt, addr. 0x1C - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Slt, addr. 0x1C - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Slt, addr. 0x1C - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Slt, addr. 0x1C - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Slt, addr. 0x1C - fetch", x"0000001C", "000", "00", "10", '1', '1', '0', "10", '0', '0', "10");
+      checkProc("Slt, addr. 0x1C - decode", x"00000020", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Slt, addr. 0x1C - executeR", x"00000020", "101", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Slt, addr. 0x1C - aluWB", x"00000020", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Beq, addr. 0x20", testInfo'length);
-      checkProc("Beq, addr. 0x20 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Beq, addr. 0x20 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Beq, addr. 0x20 - BEQ", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Beq, addr. 0x20 - fetch", x"00000020", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Beq, addr. 0x20 - decode", x"00000024", "000", "01", "01", '0', '0', '0', "10", '0', '0', "00");
+      checkProc("Beq, addr. 0x20 - BEQ", x"00000024", "001", "10", "00", '0', '1', '0', "10", '0', '0', "00");
 
       --testInfo <= pad("Addi, addr. 0x24", testInfo'length);
 
       testInfo <= pad("Slt, addr. 0x28", testInfo'length);
-      checkProc("Slt, addr. 0x28 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Slt, addr. 0x28 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Slt, addr. 0x28 - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Slt, addr. 0x28 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Slt, addr. 0x28 - fetch", x"00000028", "000", "00", "10", '1', '1', '0', "10", '0', '0', "10");
+      checkProc("Slt, addr. 0x28 - decode", x"0000002C", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Slt, addr. 0x28 - executeR", x"0000002C", "101", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Slt, addr. 0x28 - aluWB", x"0000002C", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Add, addr. 0x2C", testInfo'length);
-      checkProc("Add, addr. 0x2C - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x2C - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x2C - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x2C - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Add, addr. 0x2C - fetch", x"0000002C", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Add, addr. 0x2C - decode", x"00000030", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x2C - executeR", x"00000030", "000", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x2C - aluWB", x"00000030", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Sub, addr. 0x30", testInfo'length);
-      checkProc("Sub, addr. 0x30 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sub, addr. 0x30 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sub, addr. 0x30 - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sub, addr. 0x30 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Sub, addr. 0x30 - fetch", x"00000030", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Sub, addr. 0x30 - decode", x"00000034", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Sub, addr. 0x30 - executeR", x"00000034", "001", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Sub, addr. 0x30 - aluWB", x"00000034", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Sw, addr. 0x34", testInfo'length);
-      checkProc("Sw, addr. 0x34 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sw, addr. 0x34 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sw, addr. 0x34 - memAdr", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sw, addr. 0x34 - memWr", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Sw, addr. 0x34 - fetch", x"00000034", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Sw, addr. 0x34 - decode", x"00000038", "000", "01", "01", '0', '0', '0', "01", '0', '0', "00");
+      checkProc("Sw, addr. 0x34 - memAdr", x"00000038", "000", "10", "01", '0', '0', '0', "01", '0', '0', "00");
+      checkProc("Sw, addr. 0x34 - memWr", x"00000060", "000", "00", "00", '0', '0', '1', "01", '1', '0', "00");
 
       testInfo <= pad("Lw, addr. 0x38", testInfo'length);
-      checkProc("Lw, addr. 0x38 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Lw, addr. 0x38 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Lw, addr. 0x38 - memAdr", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Lw, addr. 0x38 - memRd", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Lw, addr. 0x38 - memWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Lw, addr. 0x38 - fetch", x"00000038", "000", "00", "10", '1', '1', '0', "01", '0', '0', "10");
+      checkProc("Lw, addr. 0x38 - decode", x"0000003C", "000", "01", "01", '0', '0', '0', "00", '0', '0', "00");
+      checkProc("Lw, addr. 0x38 - memAdr", x"0000003C", "000", "10", "01", '0', '0', '0', "00", '0', '0', "00");
+      checkProc("Lw, addr. 0x38 - memRd", x"00000060", "000", "00", "00", '0', '0', '1', "00", '0', '0', "00");
+      checkProc("Lw, addr. 0x38 - memWB", x"0000003C", "000", "00", "00", '0', '0', '0', "00", '0', '1', "01");
 
       testInfo <= pad("Add, addr. 0x3C", testInfo'length);
-      checkProc("Add, addr. 0x3C - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x3C - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x3C - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x3C - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Add, addr. 0x3C - fetch", x"0000003C", "000", "00", "10", '1', '1', '0', "00", '0', '0', "10");
+      checkProc("Add, addr. 0x3C - decode", x"00000040", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x3C - executeR", x"00000040", "000", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x3C - aluWB", x"00000040", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Jal, addr. 0x40", testInfo'length);
-      checkProc("Jal, addr. 0x40 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Jal, addr. 0x40 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Jal, addr. 0x40 - JAL", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Jal, addr. 0x40 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Jal, addr. 0x40 - fetch", x"00000040", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Jal, addr. 0x40 - decode", x"00000044", "000", "01", "01", '0', '0', '0', "11", '0', '0', "00");
+      checkProc("Jal, addr. 0x40 - JAL", x"00000044", "000", "01", "10", '0', '1', '0', "11", '0', '0', "00");
+      checkProc("Jal, addr. 0x40 - aluWB", x"00000048", "000", "00", "00", '0', '0', '0', "11", '0', '1', "00");
 
       --testInfo <= pad("Addi, addr. 0x44", testInfo'length);
 
       testInfo <= pad("Add, addr. 0x48", testInfo'length);
-      checkProc("Add, addr. 0x48 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x48 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x48 - executeR", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Add, addr. 0x48 - aluWB", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Add, addr. 0x48 - fetch", x"00000048", "000", "00", "10", '1', '1', '0', "11", '0', '0', "10");
+      checkProc("Add, addr. 0x48 - decode", x"0000004C", "000", "01", "01", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x48 - executeR", x"0000004C", "000", "10", "00", '0', '0', '0', "--", '0', '0', "00");
+      checkProc("Add, addr. 0x48 - aluWB", x"0000004C", "000", "00", "00", '0', '0', '0', "--", '0', '1', "00");
 
       testInfo <= pad("Sw, addr. 0x4C", testInfo'length);
-      checkProc("Sw, addr. 0x4C - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sw, addr. 0x4C - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sw, addr. 0x4C - memAdr", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Sw, addr. 0x4C - memWr", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Sw, addr. 0x4C - fetch", x"0000004C", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
+      checkProc("Sw, addr. 0x4C - decode", x"00000050", "000", "01", "01", '0', '0', '0', "01", '0', '0', "00");
+      checkProc("Sw, addr. 0x4C - memAdr", x"00000050", "000", "10", "01", '0', '0', '0', "01", '0', '0', "00");
+      checkProc("Sw, addr. 0x4C - memWr", x"00000064", "000", "00", "00", '0', '0', '1', "01", '1', '0', "00");
 
       testInfo <= pad("Beq, addr. 0x50", testInfo'length);
-      checkProc("Beq, addr. 0x50 - fetch", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Beq, addr. 0x50 - decode", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
-      checkProc("Beq, addr. 0x50 - BEQ", x"00000000", "---", "--", "--", '-', '-', '-', "--", '-', '-', "--");
+      checkProc("Beq, addr. 0x50 - fetch", x"00000050", "000", "00", "10", '1', '1', '0', "01", '0', '0', "10");
+      checkProc("Beq, addr. 0x50 - decode", x"00000054", "000", "01", "01", '0', '0', '0', "10", '0', '0', "00");
+      checkProc("Beq, addr. 0x50 - BEQ", x"00000054", "001", "10", "00", '0', '1', '0', "10", '0', '0', "00");
 
       en <= '0';
       testInfo <= pad("Wait a bit, PC should be 0", testInfo'length);
