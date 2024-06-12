@@ -177,47 +177,47 @@ LOCATE COMP "heartbeat" SITE "T15" ;# blue
 
 
 ### PMOD1 ###
-LOCATE COMP "dbg_leds[23]" SITE "P1" ; # PM1 1
-LOCATE COMP "dbg_leds[22]" SITE "N4" ; # PM1 2
-LOCATE COMP "dbg_leds[21]" SITE "P2" ; # PM1 3
-LOCATE COMP "dbg_leds[20]" SITE "P5" ; # PM1 4
-LOCATE COMP "dbg_leds[19]" SITE "R1" ; # PM1 5
-LOCATE COMP "dbg_leds[18]" SITE "N5" ; # PM1 6
-LOCATE COMP "dbg_leds[17]" SITE "R2" ; # PM1 7
-LOCATE COMP "dbg_leds[16]" SITE "N6" ; # PM1 8
+LOCATE COMP "leds[31]" SITE "P1" ; # PM1 1
+LOCATE COMP "leds[30]" SITE "N4" ; # PM1 2
+LOCATE COMP "leds[29]" SITE "P2" ; # PM1 3
+LOCATE COMP "leds[28]" SITE "P5" ; # PM1 4
+LOCATE COMP "leds[27]" SITE "R1" ; # PM1 5
+LOCATE COMP "leds[26]" SITE "N5" ; # PM1 6
+LOCATE COMP "leds[25]" SITE "R2" ; # PM1 7
+LOCATE COMP "leds[24]" SITE "N6" ; # PM1 8
 
 
 ### PMOD2 ###
-LOCATE COMP "dbg_leds[31]" SITE "R3"  ; # PM2 1
-LOCATE COMP "dbg_leds[30]" SITE "P11" ; # PM2 2
-LOCATE COMP "dbg_leds[29]" SITE "P12" ; # PM2 3
-LOCATE COMP "dbg_leds[28]" SITE "T3"  ; # PM2 4
-LOCATE COMP "dbg_leds[27]" SITE "R4"  ; # PM2 5
-LOCATE COMP "dbg_leds[26]" SITE "R12" ; # PM2 6
-LOCATE COMP "dbg_leds[25]" SITE "T13" ; # PM2 7
-LOCATE COMP "dbg_leds[24]" SITE "R5"  ; # PM2 8
+LOCATE COMP "dbg_leds[7]" SITE "R3"  ; # PM2 1
+LOCATE COMP "dbg_leds[6]" SITE "P11" ; # PM2 2
+LOCATE COMP "dbg_leds[5]" SITE "P12" ; # PM2 3
+LOCATE COMP "dbg_leds[4]" SITE "T3"  ; # PM2 4
+LOCATE COMP "dbg_leds[3]" SITE "R4"  ; # PM2 5
+LOCATE COMP "dbg_leds[2]" SITE "R12" ; # PM2 6
+LOCATE COMP "dbg_leds[1]" SITE "T13" ; # PM2 7
+LOCATE COMP "dbg_leds[0]" SITE "R5"  ; # PM2 8
 
 
 ### PMOD3 ###
-#LOCATE COMP "PM3[1]" SITE "B2"  ; # PM3 1
-#LOCATE COMP "PM3[2]" SITE "B3"  ; # PM3 2
-#LOCATE COMP "PM3[3]" SITE "A4" ; # PM3 3
-#LOCATE COMP "PM3[4]" SITE "D4" ; # PM3 4
-#LOCATE COMP "PM3[5]" SITE "A2" ; # PM3 5
-#LOCATE COMP "PM3[6]" SITE "B4" ; # PM3 6
-#LOCATE COMP "PM3[7]" SITE "C3" ; # PM3 7
-#LOCATE COMP "PM3[8]" SITE "C4" ; # PM3 8
+LOCATE COMP "dbg_leds[8]" SITE "B2"  ; # PM3 1
+LOCATE COMP "dbg_leds[9]" SITE "B3"  ; # PM3 2
+LOCATE COMP "dbg_leds[10]" SITE "A4" ; # PM3 3
+LOCATE COMP "dbg_leds[11]" SITE "D4" ; # PM3 4
+LOCATE COMP "dbg_leds[12]" SITE "A2" ; # PM3 5
+LOCATE COMP "dbg_leds[13]" SITE "B4" ; # PM3 6
+LOCATE COMP "dbg_leds[14]" SITE "C3" ; # PM3 7
+LOCATE COMP "dbg_leds[15]" SITE "C4" ; # PM3 8
 
 
 ### PMOD4 ###
-#LOCATE COMP "PM4[1]" SITE "J4" ; # PM4 1
-#LOCATE COMP "PM4[2]" SITE "J5" ; # PM4 2
-#LOCATE COMP "PM4[3]" SITE "H4" ; # PM4 3
-#LOCATE COMP "PM4[4]" SITE "E4" ; # PM4 4
-#LOCATE COMP "PM4[5]" SITE "J3" ; # PM4 5
-#LOCATE COMP "PM4[6]" SITE "H3" ; # PM4 6
-#LOCATE COMP "PM4[7]" SITE "E3" ; # PM4 7
-#LOCATE COMP "PM4[8]" SITE "D3" ; # PM4 8
+LOCATE COMP "dbg_leds[16]" SITE "J4" ; # PM4 1
+LOCATE COMP "dbg_leds[17]" SITE "J5" ; # PM4 2
+LOCATE COMP "dbg_leds[18]" SITE "H4" ; # PM4 3
+LOCATE COMP "dbg_leds[19]" SITE "E4" ; # PM4 4
+LOCATE COMP "dbg_leds[20]" SITE "J3" ; # PM4 5
+LOCATE COMP "dbg_leds[21]" SITE "H3" ; # PM4 6
+LOCATE COMP "dbg_leds[22]" SITE "E3" ; # PM4 7
+LOCATE COMP "dbg_leds[23]" SITE "D3" ; # PM4 8
 
 
 ### PP1 ###
@@ -245,23 +245,23 @@ IOBUF  PORT "btns[0]" PULLMODE=UP ;
 
 
 ### PP2 ###
-LOCATE COMP "dbg_leds[15]" SITE "G3" ; # PP2 1
-LOCATE COMP "dbg_leds[14]" SITE "E1" ; # PP2 2
-LOCATE COMP "dbg_leds[13]" SITE "F3" ; # PP2 3
-LOCATE COMP "dbg_leds[12]" SITE "D1" ; # PP2 4
-LOCATE COMP "dbg_leds[11]" SITE "F4" ; # PP2 5
-LOCATE COMP "dbg_leds[10]" SITE "C1" ; # PP2 6
-LOCATE COMP "dbg_leds[9]" SITE "D7" ;  # PP2 7
-LOCATE COMP "dbg_leds[8]" SITE "B6" ;  # PP2 8
+LOCATE COMP "leds[23]" SITE "G3" ; # PP2 1
+LOCATE COMP "leds[22]" SITE "E1" ; # PP2 2
+LOCATE COMP "leds[21]" SITE "F3" ; # PP2 3
+LOCATE COMP "leds[20]" SITE "D1" ; # PP2 4
+LOCATE COMP "leds[19]" SITE "F4" ; # PP2 5
+LOCATE COMP "leds[18]" SITE "C1" ; # PP2 6
+LOCATE COMP "leds[17]" SITE "D7" ;  # PP2 7
+LOCATE COMP "leds[16]" SITE "B6" ;  # PP2 8
 #LOCATE COMP "PP2[9]" SITE "C7" ;      # PP2 9
-LOCATE COMP "dbg_leds[7]" SITE "A6" ;  # PP2 11
-LOCATE COMP "dbg_leds[6]" SITE "D8" ;  # PP2 13
-LOCATE COMP "dbg_leds[5]" SITE "B7" ;  # PP2 15
-LOCATE COMP "dbg_leds[4]" SITE "C8" ;  # PP2 17
-LOCATE COMP "dbg_leds[3]" SITE "A7" ;  # PP2 19
-LOCATE COMP "dbg_leds[2]" SITE "E9" ;  # PP2 21
-LOCATE COMP "dbg_leds[1]" SITE "A8" ;  # PP2 23
-LOCATE COMP "dbg_leds[0]" SITE "D9" ;  # PP2 25
+LOCATE COMP "leds[15]" SITE "A6" ;  # PP2 11
+LOCATE COMP "leds[14]" SITE "D8" ;  # PP2 13
+LOCATE COMP "leds[13]" SITE "B7" ;  # PP2 15
+LOCATE COMP "leds[12]" SITE "C8" ;  # PP2 17
+LOCATE COMP "leds[11]" SITE "A7" ;  # PP2 19
+LOCATE COMP "leds[10]" SITE "E9" ;  # PP2 21
+LOCATE COMP "leds[9]" SITE "A8" ;  # PP2 23
+LOCATE COMP "leds[8]" SITE "D9" ;  # PP2 25
 
 
 ### Ethernet ###
