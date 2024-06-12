@@ -14,6 +14,7 @@ ARCHITECTURE studentVersion OF heirv32_mc_tester IS
   signal sReset         : std_uLogic ;
 
   signal testInfo       : string(1 to 40) := (others => ' ');
+  signal loopCounter    : natural := 0;
 
   signal adr_u          : unsigned(31 downto 0);
   signal adr            : std_ulogic_vector(31 downto 0);
@@ -40,27 +41,27 @@ ARCHITECTURE studentVersion OF heirv32_mc_tester IS
     std.textio.write(std.textio.output, LF & "===================" & LF);
     std.textio.write(std.textio.output, "Testing " & msg  & LF);
     assert (adr_u = AdrArg)
-      report ("Adr error - expected " & to_hstring(AdrArg) & " got " & to_hstring(adr_u)) severity error;
+      report ("Adr error - expected " & to_hstring(AdrArg) & " got " & to_hstring(adr_u)) severity failure;
     assert (ALUControl = ALUControlArg)
-      report ("ALUControl error - expected " & to_string(ALUControlArg) & " got " & to_string(ALUControl)) severity error;
+      report ("ALUControl error - expected " & to_string(ALUControlArg) & " got " & to_string(ALUControl)) severity failure;
     assert (ALUSrcA = ALUSrcAArg)
-      report ("ALUSrcA error - expected " & to_string(ALUSrcAArg) & " got " & to_string(ALUSrcA)) severity error;
+      report ("ALUSrcA error - expected " & to_string(ALUSrcAArg) & " got " & to_string(ALUSrcA)) severity failure;
     assert (ALUSrcB = ALUSrcBArg)
-      report ("ALUSrcB error - expected " & to_string(ALUSrcBArg) & " got " & to_string(ALUSrcB)) severity error;
+      report ("ALUSrcB error - expected " & to_string(ALUSrcBArg) & " got " & to_string(ALUSrcB)) severity failure;
     assert (IRWrite = IRWriteArg)
-      report ("IRWrite error - expected " & to_string(IRWriteArg) & " got " & to_string(IRWrite)) severity error;
+      report ("IRWrite error - expected " & to_string(IRWriteArg) & " got " & to_string(IRWrite)) severity failure;
     assert (PCWrite = PCWriteArg)
-      report ("PCWrite error - expected " & to_string(PCWriteArg) & " got " & to_string(PCWrite)) severity error;
+      report ("PCWrite error - expected " & to_string(PCWriteArg) & " got " & to_string(PCWrite)) severity failure;
     assert (adrSrc = adrSrcArg)
-      report ("adrSrc error - expected " & to_string(adrSrcArg) & " got " & to_string(adrSrc)) severity error;
+      report ("adrSrc error - expected " & to_string(adrSrcArg) & " got " & to_string(adrSrc)) severity failure;
     assert (immSrc = immSrcArg)
-      report ("immSrc error - expected " & to_string(immSrcArg) & " got " & to_string(immSrc)) severity error;
+      report ("immSrc error - expected " & to_string(immSrcArg) & " got " & to_string(immSrc)) severity failure;
     assert (memWrite = memWriteArg)
-      report ("memWrite error - expected " & to_string(memWriteArg) & " got " & to_string(memWrite)) severity error;
+      report ("memWrite error - expected " & to_string(memWriteArg) & " got " & to_string(memWrite)) severity failure;
     assert (regwrite = regwriteArg)
-      report ("regwrite error - expected " & to_string(regwriteArg) & " got " & to_string(regwrite)) severity error;
+      report ("regwrite error - expected " & to_string(regwriteArg) & " got " & to_string(regwrite)) severity failure;
     assert (resultSrc = resultSrcArg)
-      report ("resultSrc error - expected " & to_string(resultSrcArg)) severity error;
+      report ("resultSrc error - expected " & to_string(resultSrcArg)) severity failure;
     if (adr_u = AdrArg) AND (ALUControl = ALUControlArg) AND (ALUSrcA = ALUSrcAArg) AND (ALUSrcB = ALUSrcBArg) AND
       (IRWrite = IRWriteArg) AND (PCWrite = PCWriteArg) AND (adrSrc = adrSrcArg) AND (immSrc = immSrcArg) AND
       (memWrite = memWriteArg) AND (regwrite = regwriteArg) AND (resultSrc = resultSrcArg) then
@@ -93,7 +94,8 @@ BEGIN
     -- 4 clk for others
     -- 5 clk for lw
   begin
-    en <= '0';
+    -- en <= '0';
+    en <= '1';
     sReset <= '1';
     testInfo <= pad("Wait reset done", testInfo'length);
     wait for 3.5*clockPeriod;
@@ -105,7 +107,7 @@ BEGIN
   -- Depends if you used '--' for some blocks or forced signals to 0
   -- If so, modify this line and the last from the loop
     testInfo <= pad("Addi, addr. 0x00", testInfo'length);
-    en <= '1';
+    -- en <= '1';
     checkProc("Addi, addr. 0x00 - fetch", x"00000000", "000", "00", "10", '1', '1', '0', "--", '0', '0', "10");
 
     while true loop
@@ -224,14 +226,15 @@ BEGIN
       checkProc("Beq, addr. 0x50 - decode", x"00000054", "000", "01", "01", '0', '0', '0', "10", '0', '0', "00");
       checkProc("Beq, addr. 0x50 - BEQ", x"00000054", "001", "10", "00", '0', '1', '0', "10", '0', '0', "00");
 
-      en <= '0';
-      testInfo <= pad("Wait a bit, PC should be 0", testInfo'length);
-      checkProc("Prog. loop", x"00000000", "000", "00", "10", '1', '1', '0', "10", '0', '0', "10");
-      wait for 9.2*clockPeriod;
-      wait until clk'event and clk = '1';
-      wait for 0.1*clockPeriod;
+      -- en <= '0';
+      -- testInfo <= pad("Wait a bit, PC should be 0", testInfo'length);
+      -- checkProc("Prog. loop", x"00000000", "000", "00", "10", '1', '1', '0', "10", '0', '0', "10");
+      -- wait for 9.2*clockPeriod;
+      -- wait until clk'event and clk = '1';
+      -- wait for 0.1*clockPeriod;
 
-      en <= '1';
+      -- en <= '1';
+      loopCounter <= loopCounter + 1;
       checkProc("Addi, addr. 0x00 - fetch", x"00000000", "000", "00", "10", '1', '1', '0', "10", '0', '0', "10");
 
     end loop;

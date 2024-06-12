@@ -3,7 +3,7 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate -color Gray60 -label rst /heirv32_mc_tb/U_tester/rst
 add wave -noupdate -color Gray60 -label clk /heirv32_mc_tb/U_tester/clk
 add wave -noupdate -color Gray70 -label info /heirv32_mc_tb/U_tester/testInfo
-add wave -noupdate -color {Violet Red} -label en /heirv32_mc_tb/U_tester/en
+add wave -noupdate -color {Violet Red} -label {Program loop} /heirv32_mc_tb/U_tester/loopCounter
 add wave -noupdate -expand -group PC -color Green -label PC /heirv32_mc_tb/U_heirv32/PC
 add wave -noupdate -expand -group PC -color Green -label PCNext /heirv32_mc_tb/U_heirv32/PCNext
 add wave -noupdate -expand -group Instr/Data -color Gold -label ramContent /heirv32_mc_tb/U_heirv32/U_instrDataManager/U_instrDataMemory/U_bram/ramContent
@@ -35,7 +35,7 @@ add wave -noupdate -expand -group Registers -label RD2 /heirv32_mc_tb/U_heirv32/
 add wave -noupdate -label immExt /heirv32_mc_tb/U_heirv32/immExt
 add wave -noupdate -label instruction /heirv32_mc_tb/U_heirv32/instruction
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {3401176 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1472399 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
