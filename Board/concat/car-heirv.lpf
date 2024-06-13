@@ -245,14 +245,14 @@ IOBUF  PORT "btns[0]" PULLMODE=UP ;
 
 
 ### PP2 ###
-LOCATE COMP "leds[23]" SITE "G3" ; # PP2 1
-LOCATE COMP "leds[22]" SITE "E1" ; # PP2 2
-LOCATE COMP "leds[21]" SITE "F3" ; # PP2 3
-LOCATE COMP "leds[20]" SITE "D1" ; # PP2 4
-LOCATE COMP "leds[19]" SITE "F4" ; # PP2 5
-LOCATE COMP "leds[18]" SITE "C1" ; # PP2 6
-LOCATE COMP "leds[17]" SITE "D7" ;  # PP2 7
-LOCATE COMP "leds[16]" SITE "B6" ;  # PP2 8
+LOCATE COMP "leds[19]" SITE "G3" ; # PP2 1
+LOCATE COMP "leds[23]" SITE "E1" ; # PP2 2
+LOCATE COMP "leds[18]" SITE "F3" ; # PP2 3
+LOCATE COMP "leds[22]" SITE "D1" ; # PP2 4
+LOCATE COMP "leds[17]" SITE "F4" ; # PP2 5
+LOCATE COMP "leds[21]" SITE "C1" ; # PP2 6
+LOCATE COMP "leds[16]" SITE "D7" ;  # PP2 7
+LOCATE COMP "leds[20]" SITE "B6" ;  # PP2 8
 #LOCATE COMP "PP2[9]" SITE "C7" ;      # PP2 9
 LOCATE COMP "leds[15]" SITE "A6" ;  # PP2 11
 LOCATE COMP "leds[14]" SITE "D8" ;  # PP2 13
