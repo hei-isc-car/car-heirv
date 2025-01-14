@@ -1141,7 +1141,7 @@ second "notepad++.exe \"%(p)\" -n%(l)"
 )
 (pair
 first "Sublime Text"
-second "sublime_text.exe \"%(p)\""
+second "subl.exe \"%(p)\""
 )
 (pair
 first "Textpad 3.2"
@@ -1154,6 +1154,10 @@ second "textpad.exe \"%(p)(%(l))\""
 (pair
 first "UltraEdit"
 second "uedit32.exe \"%(p)/%(l)\""
+)
+(pair
+first "VSCode"
+second "code.exe \"%(p)\""
 )
 (pair
 first "WinEdit"
@@ -1183,7 +1187,7 @@ second "notepad++.exe \"%(p)\" -n%(l) -ro"
 )
 (pair
 first "Sublime Text"
-second "sublime_text.exe \"%(p)\""
+second "subl.exe \"%(p)\""
 )
 (pair
 first "Textpad 3.2"
@@ -1197,10 +1201,14 @@ second "textpad.exe -r \"%(p)(%(l))\""
 first "UltraEdit"
 second "uedit32.exe \"%(p)/%(l)\" /r"
 )
+(pair
+first "VSCode"
+second "code.exe \"%(p)\""
+)
 ]
 defaultTextPrintingCmd "Enscript"
-win32DefaultEditor "Sublime Text"
-win32DefaultViewer "Sublime Text"
+win32DefaultEditor "VSCode"
+win32DefaultViewer "VSCode"
 unixDefaultEditor "Builtin"
 unixDefaultViewer "Builtin"
 defaultLanguage 11
@@ -1232,9 +1240,12 @@ toolbarVisibility [
 "AsmWindow:FormatText"
 "FcWindow:FormatText"
 "StdWindow:FormatText"
+"SymbolWindow:CommentGraphics"
 "AsmWindow:CommentGraphics"
 "StdWindow:CommentGraphics"
 "FcWindow:CommentGraphics"
+"BdWindow:Appearance"
+"SymbolWindow:Appearance"
 "AsmWindow:Appearance"
 "StdWindow:Appearance"
 "FcWindow:Appearance"
@@ -1242,10 +1253,12 @@ toolbarVisibility [
 "FcTabWindow:Appearance"
 "AsmTabWindow:Appearance"
 "TtTabWindow:Appearance"
+"BdWindow:ArrangeObject"
+"SymbolWindow:ArrangeObject"
 "AsmWindow:ArrangeObject"
 "StdWindow:ArrangeObject"
 "FcWindow:ArrangeObject"
-"BdWindow:ArrangeObject"
+"BdWindow:CommentGraphics"
 ]
 seperateElseBegincheck 1
 ASICDesigner 1
@@ -1267,10 +1280,12 @@ projectPaths [
 "C:\\work\\git\\Education\\eln\\projects\\Cursor_trial\\Prefs\\cursor.hdp"
 "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\eln_labs.hdp"
 "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\hds.hdp"
-"C:\\work\\edu\\eln\\labo\\eln_labs\\Prefs\\hds.hdp"
-"C:\\Users\\axel.amand\\Desktop\\car-labs\\hdl\\Prefs\\hds.hdp"
-"C:\\dev\\car-labs\\hdl\\Prefs\\hds.hdp"
-"C:\\dev\\car-heirv\\Prefs\\hds.hdp"
+"C:\\work\\git\\Education\\eln\\projects\\student\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\work\\git\\Education\\eln\\projects\\solution\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\work\\edu\\eln\\project\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\dev\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\dev\\did-chrono\\Prefs\\hds.hdp"
+"C:\\dev\\DiD\\did-chrono\\Prefs\\hds.hdp"
 "C:\\dev\\CAr\\car-heirv\\Prefs\\hds.hdp"
 ]
 libMappingsRootDir ""
@@ -1510,7 +1525,7 @@ width 816
 height 1161
 )
 (PageSizeInfo
-name "Format papier personnalisé"
+name "Format papier personnalisï¿½"
 type 256
 width 783
 height 1013
@@ -1666,15 +1681,11 @@ second "concatenated"
 defaultCategoryTemplates [
 1
 "architecture.vhd"
-2
-"entity.vhd"
 3
 "combined.vhd"
 ]
 defaultCategoryTemplatesPrefs [
 1
-0
-2
 0
 3
 0
@@ -1698,7 +1709,6 @@ tasksMenubarOrder [
 "USER:Generate"
 ]
 tasksShortcutbarOrder [
-"Setup DesignChecker"
 "\"USER:ModelSim Compile\""
 "\"USER:ModelSim Flow\""
 "\"USER:ModelSim Simulate\""
@@ -2382,31 +2392,6 @@ second ""
 )
 (TaskPref
 taskName "\"USER:Diamond Project Navigator\" USER:Update.ldf"
-taskPrefStringMap [
-(pair
-first "enabled"
-second ""
-)
-(pair
-first "hierLevel"
-second "3"
-)
-(pair
-first "onPulldownMenu"
-second ""
-)
-(pair
-first "onShortcutBar"
-second ""
-)
-(pair
-first "onToolbar"
-second ""
-)
-]
-)
-(TaskPref
-taskName "\"USER:Diamond Project Navigator\" USER:Update.prjx"
 taskPrefStringMap [
 (pair
 first "enabled"
@@ -4206,31 +4191,6 @@ second ""
 ]
 )
 (TaskPref
-taskName "USER:Diamond"
-taskPrefStringMap [
-(pair
-first "enabled"
-second ""
-)
-(pair
-first "hierLevel"
-second "1"
-)
-(pair
-first "onPulldownMenu"
-second ""
-)
-(pair
-first "onShortcutBar"
-second ""
-)
-(pair
-first "onToolbar"
-second ""
-)
-]
-)
-(TaskPref
 taskName "USER:Generate"
 taskPrefStringMap [
 (pair
@@ -4342,7 +4302,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "1009x663+-1672+-24"
+logWindowGeometry "622x780+-1497+-166"
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0
@@ -5260,18 +5220,22 @@ theList "HDL Files"
 columns [
 (TreeListVPData_Column
 name "Type"
+displayName ""
 width 140
 )
 (TreeListVPData_Column
 name "Extends"
+displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Size"
+displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Time Stamp"
+displayName ""
 width 120
 )
 ]
@@ -6314,78 +6278,6 @@ declHierarchy [
 activeViewpointIdx 0
 )
 (WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "HEIRV32_SC"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
 name "Board"
 showingHierarchy 0
 openLibs [
@@ -6396,10 +6288,18 @@ declHierarchy [
 activeViewpointIdx 0
 )
 (WorkTab
-name "HEIRV32_MC"
+name "Chronometer"
 showingHierarchy 0
 openLibs [
-"HEIRV32_MC"
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "Chronometer_test"
+showingHierarchy 0
+openLibs [
 ]
 declHierarchy [
 ]
@@ -6410,6 +6310,16 @@ name "HEIRV32"
 showingHierarchy 0
 openLibs [
 "HEIRV32"
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "HEIRV32_MC"
+showingHierarchy 0
+openLibs [
+"HEIRV32_MC"
 ]
 declHierarchy [
 ]
@@ -6427,6 +6337,12 @@ activeViewpointIdx 0
 )
 ]
 ViewpointsOnOutlookBar [
+"Requirements"
+"Default Viewpoint"
+"Version Management"
+"HDL Files"
+"Logical Objects"
+"All Views"
 ]
 lastActiveViewpoint "Default Viewpoint"
 expandedTemplateNodes [
@@ -6437,23 +6353,25 @@ SplitterClientPrefs [
 (SplitterPreference
 hidden 0
 expand 0
-size 180
+size 190
 )
 ]
 displayHierarchy 0
-xPos -2946
-yPos -60
+xPos -1920
+yPos -251
 width 1936
 height 1048
 activeSidePanelTab 2
-activeLibraryTab 2
-sidePanelSize 278
+activeLibraryTab 1
+sidePanelSize 293
 showUnixHiddenFiles 0
-componentBrowserXpos -1665
-componentBrowserYpos -80
-componentBrowserWidth 542
-componentBrowserHeight 650
+componentBrowserXpos -1351
+componentBrowserYpos -251
+componentBrowserWidth 300
+componentBrowserHeight 340
 componentBrowserLibraryNames [
+"common"
+"gates"
 "sequential"
 ]
 )
@@ -6538,6 +6456,8 @@ display "State Register Statements"
 status 1
 )
 ]
+vhdlScalarType "std_ulogic"
+vhdlVectorType "std_ulogic_vector"
 clockNameVaSet (VaSet
 )
 clockShapeVaSet (VaSet
@@ -6567,6 +6487,7 @@ recoveryShapeVaSet (VaSet
 vasetType 1
 fg "65535,0,0"
 )
+rstLevel 1
 stateShapeVaSet (VaSet
 vasetType 1
 fg "0,65535,65535"
@@ -6700,7 +6621,7 @@ archConcurrentStatementBlockValueVaSet (VaSet
 )
 outputSignalStatus 1
 internalSignalStatus 2
-showPropsDlgMsg 1
+showPropsDlgMsg 0
 )
 (H2gPreferences
 filesAdded [
@@ -6901,7 +6822,7 @@ cptPortOutName "Out0"
 cptPortInOutName "InOut0"
 cptPortBufferName "Buffer0"
 groupName "Group0"
-cptPortVhdlType "unsigned"
+cptPortVhdlType "std_ulogic"
 cptPortVerilogType "wire"
 cptPortVhdlBounds "(15 DOWNTO 0)"
 cptPortVerilogLb "15"
@@ -6919,7 +6840,6 @@ font "Courier New,8,0"
 )
 order 0
 editSignalScope 4
-promptGenOrderIndicator 0
 showUpdateWhereUsedPrompt 0
 )
 ]

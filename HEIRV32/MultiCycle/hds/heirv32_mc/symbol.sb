@@ -558,19 +558,19 @@ value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32\\MultiCycle\\hds\\heirv32_mc"
 )
 (vvPair
 variable "date"
-value "12/06/2024"
+value "14.01.2025"
 )
 (vvPair
 variable "day"
-value "mer."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "mercredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "12"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -598,7 +598,7 @@ value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "12/06/2024"
+value "14.01.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -610,7 +610,7 @@ value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:24:00"
+value "17:17:10"
 )
 (vvPair
 variable "group"
@@ -638,7 +638,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32/MultiCycle/work"
 )
 (vvPair
 variable "mm"
-value "06"
+value "01"
 )
 (vvPair
 variable "module_name"
@@ -646,11 +646,11 @@ value "heirv32_mc"
 )
 (vvPair
 variable "month"
-value "juin"
+value "janv."
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "janvier"
 )
 (vvPair
 variable "p"
@@ -686,7 +686,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:24:00"
+value "17:17:10"
 )
 (vvPair
 variable "unit"
@@ -706,11 +706,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2024"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "24"
+value "25"
 )
 ]
 )
@@ -1150,7 +1150,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,45600,49000"
+xt "36200,48000,46000,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1773,7 +1773,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 5680,0
+lastUid 5726,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

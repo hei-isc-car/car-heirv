@@ -118,19 +118,19 @@ value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tb"
 )
 (vvPair
 variable "date"
-value "12/06/2024"
+value "14.01.2025"
 )
 (vvPair
 variable "day"
-value "mer."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "mercredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "12"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -158,7 +158,7 @@ value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "12/06/2024"
+value "14.01.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -170,7 +170,7 @@ value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:29:12"
+value "17:00:37"
 )
 (vvPair
 variable "group"
@@ -198,7 +198,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32_test/work"
 )
 (vvPair
 variable "mm"
-value "06"
+value "01"
 )
 (vvPair
 variable "module_name"
@@ -206,11 +206,11 @@ value "heirv32_mc_tb"
 )
 (vvPair
 variable "month"
-value "juin"
+value "janv."
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "janvier"
 )
 (vvPair
 variable "p"
@@ -246,7 +246,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "10:29:12"
+value "17:00:37"
 )
 (vvPair
 variable "unit"
@@ -266,11 +266,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2024"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "24"
+value "25"
 )
 ]
 )
@@ -299,7 +299,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "49200,4000,58700,5000"
+xt "49200,4000,59000,5000"
 st "
 by %user on %dd %month %year
 "
@@ -1666,7 +1666,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "-1928,-259,8,789"
-viewArea "-1300,-1500,89224,45776"
+viewArea "-1264,-1466,87757,46484"
 cachedDiagramExtent "0,-200,86000,43200"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -1690,7 +1690,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1438,0
+lastUid 1461,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
