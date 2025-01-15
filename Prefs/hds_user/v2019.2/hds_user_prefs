@@ -1709,6 +1709,7 @@ tasksMenubarOrder [
 "USER:Generate"
 ]
 tasksShortcutbarOrder [
+"Setup DesignChecker"
 "\"USER:ModelSim Compile\""
 "\"USER:ModelSim Flow\""
 "\"USER:ModelSim Simulate\""
@@ -4355,7 +4356,7 @@ requirementTextFontVaSet (VaSet
 fg "0,0,32768"
 font "arial,8,0"
 )
-gridVisible 1
+gridVisible 0
 gridSnapping 1
 gridHorizSpacing 1000
 gridVertSpacing 1000
@@ -4647,7 +4648,7 @@ requirementTextFontVaSet (VaSet
 fg "0,0,32768"
 font "arial,8,0"
 )
-gridVisible 1
+gridVisible 0
 gridSnapping 1
 gridHorizSpacing 1000
 gridVertSpacing 1000
@@ -4974,7 +4975,7 @@ requirementTextFontVaSet (VaSet
 fg "0,0,32768"
 font "arial,8,0"
 )
-gridVisible 1
+gridVisible 0
 gridSnapping 1
 gridHorizSpacing 1000
 gridVertSpacing 1000
@@ -6731,7 +6732,7 @@ requirementTextFontVaSet (VaSet
 fg "0,0,32768"
 font "arial,8,0"
 )
-gridVisible 1
+gridVisible 0
 gridSnapping 1
 gridHorizSpacing 1000
 gridVertSpacing 1000
