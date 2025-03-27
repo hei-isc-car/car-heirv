@@ -1,6 +1,4 @@
-USE std.textio.all;
-
-ARCHITECTURE bhv OF bramDualport IS
+ARCHITECTURE rtl OF bramDualport IS
   -- Define ramContent type
   type ramContentType is array(0 to (2**addressBitNb)-1) of bit_vector(dataBitNb-1 DOWNTO 0);
 
@@ -38,4 +36,4 @@ BEGIN
     end if;
   end process;
 
-END ARCHITECTURE bhv;
+END ARCHITECTURE rtl;
