@@ -1207,8 +1207,8 @@ second "code.exe \"%(p)\""
 )
 ]
 defaultTextPrintingCmd "Enscript"
-win32DefaultEditor "VSCode"
-win32DefaultViewer "VSCode"
+win32DefaultEditor "Notepad++"
+win32DefaultViewer "Notepad++"
 unixDefaultEditor "Builtin"
 unixDefaultViewer "Builtin"
 defaultLanguage 11
@@ -6345,8 +6345,8 @@ size 190
 )
 ]
 displayHierarchy 0
-xPos -1920
-yPos -251
+xPos 0
+yPos 0
 width 1936
 height 1048
 activeSidePanelTab 2
