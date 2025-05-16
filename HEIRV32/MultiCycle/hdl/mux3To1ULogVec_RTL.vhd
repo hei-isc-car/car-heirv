@@ -1,7 +1,7 @@
 ARCHITECTURE RTL OF mux3To1ULogVec IS
 BEGIN
 
-  muxSelect: process(sel, in1, in2, in3, in4)
+  muxSelect: process(sel, in1, in2, in3)
   begin
     case to_integer(unsigned(sel)) is
       when 0 => out1 <= in1 after g_tMux;
@@ -13,4 +13,3 @@ BEGIN
   end process muxSelect;
 
 END ARCHITECTURE RTL;
-
