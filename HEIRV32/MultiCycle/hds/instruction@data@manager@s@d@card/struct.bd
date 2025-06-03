@@ -29,7 +29,7 @@ elements [
 (GiElement
 name "g_dataWidth"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 ]
 mwi 0
@@ -43,7 +43,7 @@ elements [
 (GiElement
 name "g_dataWidth"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 (GiElement
 name "g_addrWidth"
@@ -67,7 +67,7 @@ value "gateDelay"
 (GiElement
 name "dataBitNb"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 ]
 mwi 0
@@ -99,7 +99,7 @@ e "BRAM address size"
 (GiElement
 name "g_DATA_BIT_NB"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 e "BRAM data size"
 )
 (GiElement
@@ -131,7 +131,7 @@ value "g_ADDR_WIDTH"
 (GiElement
 name "g_dataWidth"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 (GiElement
 name "g_programFile"
@@ -254,19 +254,19 @@ value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32\\MultiCycle\\hds\\instruction
 )
 (vvPair
 variable "date"
-value "06.03.2025"
+value "03.06.2025"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "06"
+value "03"
 )
 (vvPair
 variable "entity_name"
@@ -294,7 +294,7 @@ value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "06.03.2025"
+value "03.06.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -306,7 +306,7 @@ value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:36:46"
+value "18:47:47"
 )
 (vvPair
 variable "group"
@@ -334,7 +334,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32/MultiCycle/work"
 )
 (vvPair
 variable "mm"
-value "03"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -342,11 +342,11 @@ value "instructionDataManagerSDCard"
 )
 (vvPair
 variable "month"
-value "mars"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mars"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -382,7 +382,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:36:46"
+value "18:47:47"
 )
 (vvPair
 variable "unit"
@@ -697,8 +697,8 @@ uid 359,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "137000,55200,161000,56000"
-st "g_dataWidth = g_DATA_WIDTH    ( positive )  "
+xt "137000,55200,160500,56000"
+st "g_dataWidth = g_dataWidth    ( positive )  "
 )
 header ""
 )
@@ -706,7 +706,7 @@ elements [
 (GiElement
 name "g_dataWidth"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 ]
 )
@@ -734,7 +734,7 @@ uid 476,0
 decl (Decl
 n "adr_u"
 t "unsigned"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 17
 suid 14,0
 )
@@ -743,8 +743,8 @@ uid 477,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "43000,27600,72500,28400"
-st "SIGNAL adr_u        : unsigned(g_DATA_WIDTH-1 DOWNTO 0)"
+xt "43000,27600,72000,28400"
+st "SIGNAL adr_u        : unsigned(g_dataWidth-1 DOWNTO 0)"
 )
 )
 *12 (Net
@@ -753,7 +753,7 @@ lang 11
 decl (Decl
 n "adr"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 1
 suid 20,0
 )
@@ -762,8 +762,8 @@ uid 543,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "43000,12800,73500,13600"
-st "adr          : std_ulogic_vector(g_DATA_WIDTH-1 DOWNTO 0)"
+xt "43000,12800,73000,13600"
+st "adr          : std_ulogic_vector(g_dataWidth-1 DOWNTO 0)"
 )
 )
 *13 (Net
@@ -826,7 +826,7 @@ lang 11
 decl (Decl
 n "data"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 10
 suid 26,0
 )
@@ -835,8 +835,8 @@ uid 555,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "43000,20000,73500,20800"
-st "data         : std_ulogic_vector(g_DATA_WIDTH-1 DOWNTO 0)"
+xt "43000,20000,73000,20800"
+st "data         : std_ulogic_vector(g_dataWidth-1 DOWNTO 0)"
 )
 )
 *17 (Net
@@ -845,7 +845,7 @@ lang 11
 decl (Decl
 n "instruction"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 11
 suid 27,0
 )
@@ -854,8 +854,8 @@ uid 557,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "43000,20800,73500,21600"
-st "instruction  : std_ulogic_vector(g_DATA_WIDTH-1 DOWNTO 0)"
+xt "43000,20800,73000,21600"
+st "instruction  : std_ulogic_vector(g_dataWidth-1 DOWNTO 0)"
 )
 )
 *18 (SaComponent
@@ -995,7 +995,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "32000,52400,56000,54000"
-st "g_dataWidth = g_DATA_WIDTH    ( positive )  
+st "g_dataWidth = g_dataWidth     ( positive )  
 g_addrWidth = g_ADDR_WIDTH    ( positive )  "
 )
 header ""
@@ -1004,7 +1004,7 @@ elements [
 (GiElement
 name "g_dataWidth"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 (GiElement
 name "g_addrWidth"
@@ -1250,9 +1250,10 @@ uid 654,0
 va (VaSet
 font "Verdana,8,0"
 )
-xt "20000,49000,39900,51000"
-st "delay     = gateDelay       ( time     )  
-dataBitNb = g_DATA_WIDTH    ( positive )  "
+xt "20000,49000,38600,51000"
+st "delay     = gateDelay      ( time     )  
+dataBitNb = g_dataWidth    ( positive )  
+"
 )
 header ""
 )
@@ -1265,7 +1266,7 @@ value "gateDelay"
 (GiElement
 name "dataBitNb"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 ]
 )
@@ -1923,7 +1924,7 @@ xt "35000,68000,113500,72000"
 st "g_CLK_DIV                   = g_CLK_DIV                      ( positive ) --Clock divider. 2 for clk up to 50M, 3 up to 100M, 4 up to 200M.              
 g_FILE_NAME                 = g_PROGRAM_SD_NAME              ( string   ) --The file name to look for. Case insensitive.                                 
 g_ADDRESS_BIT_NB            = g_ADDR_WIDTH                   ( positive ) --BRAM address size                                                            
-g_DATA_BIT_NB               = g_DATA_WIDTH                   ( positive ) --BRAM data size                                                               
+g_DATA_BIT_NB               = g_dataWidth                    ( positive ) --BRAM data size                                                               
 g_FILENOTFOUND_TIMER_TARGET = g_FILENOTFOUND_TIMER_TARGET    ( positive ) --The number of clocks after which an error is issued if file still not found. "
 )
 header ""
@@ -1950,7 +1951,7 @@ e "BRAM address size"
 (GiElement
 name "g_DATA_BIT_NB"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 e "BRAM data size"
 )
 (GiElement
@@ -2422,7 +2423,7 @@ font "Courier New,8,0"
 )
 xt "44000,107200,71500,109600"
 st "g_addrWidth   = g_ADDR_WIDTH         ( positive )  
-g_dataWidth   = g_DATA_WIDTH         ( positive )  
+g_dataWidth   = g_dataWidth          ( positive )  
 g_programFile = g_PROGRAM_SD_NAME    ( string   )  "
 )
 header ""
@@ -2436,7 +2437,7 @@ value "g_ADDR_WIDTH"
 (GiElement
 name "g_dataWidth"
 type "positive"
-value "g_DATA_WIDTH"
+value "g_dataWidth"
 )
 (GiElement
 name "g_programFile"
@@ -2561,7 +2562,7 @@ lang 11
 decl (Decl
 n "writeData"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 8
 suid 52,0
 )
@@ -2570,8 +2571,8 @@ uid 2513,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "43000,18400,73500,19200"
-st "writeData    : std_ulogic_vector(g_DATA_WIDTH-1 DOWNTO 0)"
+xt "43000,18400,73000,19200"
+st "writeData    : std_ulogic_vector(g_dataWidth-1 DOWNTO 0)"
 )
 )
 *72 (Net
@@ -4378,8 +4379,8 @@ uid 669,0
 va (VaSet
 isHidden 1
 )
-xt "-5000,30800,11400,32000"
-st "adr : (g_DATA_WIDTH-1:0)"
+xt "-5000,30800,9000,32000"
+st "adr : (g_dataWidth-1:0)"
 blo "-5000,31800"
 tm "WireNameMgr"
 )
@@ -4723,8 +4724,8 @@ uid 2505,0
 va (VaSet
 isHidden 1
 )
-xt "-5000,34800,14600,36000"
-st "writeData : (g_DATA_WIDTH-1:0)"
+xt "-5000,34800,12200,36000"
+st "writeData : (g_dataWidth-1:0)"
 blo "-5000,35800"
 tm "WireNameMgr"
 )
@@ -5273,8 +5274,8 @@ uid 2651,0
 va (VaSet
 isHidden 1
 )
-xt "0,49800,20200,51000"
-st "instruction : (g_DATA_WIDTH-1:0)"
+xt "0,49800,17800,51000"
+st "instruction : (g_dataWidth-1:0)"
 blo "0,50800"
 tm "WireNameMgr"
 )
@@ -6117,7 +6118,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-9000,0"
-lastUid 3097,0
+lastUid 3216,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -7202,7 +7203,7 @@ m 4
 decl (Decl
 n "adr_u"
 t "unsigned"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 17
 suid 14,0
 )
@@ -7215,7 +7216,7 @@ lang 11
 decl (Decl
 n "adr"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 1
 suid 20,0
 )
@@ -7265,7 +7266,7 @@ m 1
 decl (Decl
 n "data"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 10
 suid 26,0
 )
@@ -7279,7 +7280,7 @@ m 1
 decl (Decl
 n "instruction"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 11
 suid 27,0
 )
@@ -7387,7 +7388,7 @@ lang 11
 decl (Decl
 n "writeData"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 8
 suid 52,0
 )
@@ -7706,7 +7707,7 @@ uid 713,0
 )
 *278 (LogGeneric
 generic (GiElement
-name "g_DATA_WIDTH"
+name "g_dataWidth"
 type "positive"
 value "32"
 )

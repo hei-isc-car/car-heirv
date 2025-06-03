@@ -7,4 +7,4 @@ main:
 
 # Life saver ! Keep it
 life_saver:
-  jal  init
+  jal  x0 init

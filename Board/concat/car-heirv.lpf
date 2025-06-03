@@ -250,23 +250,23 @@ IOBUF  PORT "btns[0]" PULLMODE=UP ;
 
 
 ### PP2 ###
-LOCATE COMP "leds[19]" SITE "G3" ; # PP2 1
-LOCATE COMP "leds[23]" SITE "E1" ; # PP2 2
-LOCATE COMP "leds[18]" SITE "F3" ; # PP2 3
-LOCATE COMP "leds[22]" SITE "D1" ; # PP2 4
-LOCATE COMP "leds[17]" SITE "F4" ; # PP2 5
-LOCATE COMP "leds[21]" SITE "C1" ; # PP2 6
-LOCATE COMP "leds[16]" SITE "D7" ;  # PP2 7
-LOCATE COMP "leds[20]" SITE "B6" ;  # PP2 8
-#LOCATE COMP "PP2[9]" SITE "C7" ;      # PP2 9
-LOCATE COMP "leds[15]" SITE "A6" ;  # PP2 11
-LOCATE COMP "leds[14]" SITE "D8" ;  # PP2 13
-LOCATE COMP "leds[13]" SITE "B7" ;  # PP2 15
-LOCATE COMP "leds[12]" SITE "C8" ;  # PP2 17
-LOCATE COMP "leds[11]" SITE "A7" ;  # PP2 19
-LOCATE COMP "leds[10]" SITE "E9" ;  # PP2 21
-LOCATE COMP "leds[9]" SITE "A8" ;  # PP2 23
-LOCATE COMP "leds[8]" SITE "D9" ;  # PP2 25
+LOCATE COMP "leds[19]" SITE "G3" ; # PP2 1 / ext_PM1_5
+LOCATE COMP "leds[23]" SITE "E1" ; # PP2 2 / ext_PM1_1
+LOCATE COMP "leds[18]" SITE "F3" ; # PP2 3 / ext_PM1_6
+LOCATE COMP "leds[22]" SITE "D1" ; # PP2 4 / ext_PM1_2
+LOCATE COMP "leds[17]" SITE "F4" ; # PP2 5 / ext_PM1_7
+LOCATE COMP "leds[21]" SITE "C1" ; # PP2 6 / ext_PM1_3
+LOCATE COMP "leds[16]" SITE "D7" ;  # PP2 7 / ext_PM1_8
+LOCATE COMP "leds[20]" SITE "B6" ;  # PP2 8 / ext_PM1_4
+#LOCATE COMP "PP2[9]" SITE "C7" ;      # PP2 9 / ext_NC
+LOCATE COMP "leds[15]" SITE "A6" ;  # PP2 11 / ext_PM2_1
+LOCATE COMP "leds[11]" SITE "D8" ;  # PP2 13 / ext_PM2_5
+LOCATE COMP "leds[14]" SITE "B7" ;  # PP2 15 / ext_PM2_2
+LOCATE COMP "leds[10]" SITE "C8" ;  # PP2 17 / ext_PM2_6
+LOCATE COMP "leds[13]" SITE "A7" ;  # PP2 19 / ext_PM2_3
+LOCATE COMP "leds[9]" SITE "E9" ;  # PP2 21 / ext_PM2_7
+LOCATE COMP "leds[12]" SITE "A8" ;  # PP2 23 / ext_PM2_4
+LOCATE COMP "leds[8]" SITE "D9" ;  # PP2 25 / ext_PM2_8
 
 
 ### Ethernet ###

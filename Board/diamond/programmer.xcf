@@ -18,7 +18,7 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/temp/eda/Axam/car-heirv/Board/diamond/toplevel/car-heirv_toplevel.bit</File>
+			<File></File>
 			<FileTime>05/27/25 16:19:09</FileTime>
 			<JedecChecksum>0xF2A5</JedecChecksum>
 			<Operation>Fast Program</Operation>

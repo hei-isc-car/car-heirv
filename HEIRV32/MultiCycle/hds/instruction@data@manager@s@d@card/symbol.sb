@@ -71,7 +71,7 @@ lang 11
 decl (Decl
 n "adr"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 1
 suid 66,0
 )
@@ -110,7 +110,7 @@ m 1
 decl (Decl
 n "data"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 10
 suid 69,0
 )
@@ -136,7 +136,7 @@ m 1
 decl (Decl
 n "instruction"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 11
 suid 71,0
 )
@@ -226,7 +226,7 @@ lang 11
 decl (Decl
 n "writeData"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 8
 suid 79,0
 )
@@ -527,21 +527,13 @@ uid 476,0
 )
 *71 (LogGeneric
 generic (GiElement
-name "g_DATA_WIDTH"
-type "positive"
-value "32"
-)
-uid 566,0
-)
-*72 (LogGeneric
-generic (GiElement
 name "g_PROGRAM_SD_NAME"
 type "string"
 value "\"\""
 )
 uid 591,0
 )
-*73 (LogGeneric
+*72 (LogGeneric
 generic (GiElement
 name "g_CLK_DIV"
 type "positive"
@@ -550,13 +542,21 @@ e "Clock divider. 2 for clk up to 50M, 3 up to 100M, 4 up to 200M."
 )
 uid 616,0
 )
-*74 (LogGeneric
+*73 (LogGeneric
 generic (GiElement
 name "g_testMode"
 type "std_ulogic"
 value "'0'"
 )
 uid 1927,0
+)
+*74 (LogGeneric
+generic (GiElement
+name "g_dataWidth"
+type "positive"
+value "32"
+)
+uid 2099,0
 )
 ]
 )
@@ -622,27 +622,27 @@ uid 475,0
 )
 *82 (MRCItem
 litem &71
-pos 1
-dimension 20
-uid 565,0
-)
-*83 (MRCItem
-litem &72
 pos 2
 dimension 20
 uid 590,0
 )
-*84 (MRCItem
-litem &73
+*83 (MRCItem
+litem &72
 pos 4
 dimension 20
 uid 615,0
 )
-*85 (MRCItem
-litem &74
+*84 (MRCItem
+litem &73
 pos 5
 dimension 20
 uid 1928,0
+)
+*85 (MRCItem
+litem &74
+pos 1
+dimension 20
+uid 2098,0
 )
 ]
 )
@@ -759,19 +759,19 @@ value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32\\MultiCycle\\hds\\instruction
 )
 (vvPair
 variable "date"
-value "06.03.2025"
+value "03.06.2025"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "06"
+value "03"
 )
 (vvPair
 variable "entity_name"
@@ -799,7 +799,7 @@ value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "06.03.2025"
+value "03.06.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -811,7 +811,7 @@ value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:47:35"
+value "18:48:11"
 )
 (vvPair
 variable "group"
@@ -839,7 +839,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32/MultiCycle/work"
 )
 (vvPair
 variable "mm"
-value "03"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -847,11 +847,11 @@ value "instructionDataManagerSDCard"
 )
 (vvPair
 variable "month"
-value "mars"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mars"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -887,7 +887,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "11:47:35"
+value "18:48:11"
 )
 (vvPair
 variable "unit"
@@ -953,15 +953,15 @@ uid 1204,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,79500,3200"
-st "adr          : IN     std_ulogic_vector (g_DATA_WIDTH-1 DOWNTO 0) ;"
+xt "44000,2400,79000,3200"
+st "adr          : IN     std_ulogic_vector (g_dataWidth-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "adr"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 1
 suid 66,0
 )
@@ -1094,8 +1094,8 @@ uid 1219,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,9600,79500,10400"
-st "data         : OUT    std_ulogic_vector (g_DATA_WIDTH-1 DOWNTO 0) ;"
+xt "44000,9600,79000,10400"
+st "data         : OUT    std_ulogic_vector (g_dataWidth-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1103,7 +1103,7 @@ m 1
 decl (Decl
 n "data"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 10
 suid 69,0
 )
@@ -1189,8 +1189,8 @@ uid 1229,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,10400,79500,11200"
-st "instruction  : OUT    std_ulogic_vector (g_DATA_WIDTH-1 DOWNTO 0) ;"
+xt "44000,10400,79000,11200"
+st "instruction  : OUT    std_ulogic_vector (g_dataWidth-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1198,7 +1198,7 @@ m 1
 decl (Decl
 n "instruction"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 11
 suid 71,0
 )
@@ -1521,15 +1521,15 @@ uid 1269,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,8000,79500,8800"
-st "writeData    : IN     std_ulogic_vector (g_DATA_WIDTH-1 DOWNTO 0) ;"
+xt "44000,8000,79000,8800"
+st "writeData    : IN     std_ulogic_vector (g_dataWidth-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "writeData"
 t "std_ulogic_vector"
-b "(g_DATA_WIDTH-1 DOWNTO 0)"
+b "(g_dataWidth-1 DOWNTO 0)"
 o 8
 suid 79,0
 )
@@ -1679,7 +1679,7 @@ xt "15000,37400,74500,43800"
 st "Generic Declarations
 
 g_ADDR_WIDTH                positive   10                                                                          
-g_DATA_WIDTH                positive   32                                                                          
+g_dataWidth                 positive   32                                                                          
 g_PROGRAM_SD_NAME           string     \"\"                                                                          
 g_FILENOTFOUND_TIMER_TARGET integer    500000000                                                                   
 g_CLK_DIV                   positive   3         --Clock divider. 2 for clk up to 50M, 3 up to 100M, 4 up to 200M. 
@@ -1695,7 +1695,7 @@ type "positive"
 value "10"
 )
 (GiElement
-name "g_DATA_WIDTH"
+name "g_dataWidth"
 type "positive"
 value "32"
 )
@@ -1754,7 +1754,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "31200,50000,41200,51000"
+xt "31200,50000,40600,51000"
 st "
 by %user on %dd %month %year
 "
@@ -2379,7 +2379,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 2073,0
+lastUid 2145,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"
