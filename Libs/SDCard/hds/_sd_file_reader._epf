@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom sd_file_reader
+DEFAULT_FILE atom sd_file_reader.v
