@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom rtl_synch
+DEFAULT_FILE atom registerFile_rtl_synch.vhd

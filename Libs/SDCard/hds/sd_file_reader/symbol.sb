@@ -1,0 +1,1794 @@
+DocumentHdrVersion "1.1"
+Header (DocumentHdr
+version 2
+language 1
+dialect 5
+dmPackageRefs [
+]
+)
+version "27.1"
+appVersion "2019.2 (Build 5)"
+model (Symbol
+commonDM (CommonDM
+ldm (LogicalDM
+ordering 1
+suid 11,0
+usingSuid 1
+emptyRow *1 (LEmptyRow
+)
+uid 138,0
+optionalChildren [
+*2 (RefLabelRowHdr
+)
+*3 (TitleRowHdr
+)
+*4 (FilterRowHdr
+)
+*5 (RefLabelColHdr
+tm "RefLabelColHdrMgr"
+)
+*6 (RowExpandColHdr
+tm "RowExpandColHdrMgr"
+)
+*7 (GroupColHdr
+tm "GroupColHdrMgr"
+)
+*8 (NameColHdr
+tm "NameColHdrMgr"
+)
+*9 (ModeColHdr
+tm "ModeColHdrMgr"
+)
+*10 (TypeColHdr
+tm "TypeColHdrMgr"
+)
+*11 (SignedColHdr
+tm "SignedColHdrMgr"
+)
+*12 (BoundsColHdr
+tm "BoundsColHdrMgr"
+)
+*13 (InitColHdr
+tm "InitColHdrMgr"
+)
+*14 (EolColHdr
+tm "EolColHdrMgr"
+)
+*15 (LogPort
+port (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "card_stat"
+t "wire"
+b "[3:0]"
+prec "// status output (optional for user)"
+eolc "// show the sdcard initialize status"
+preAdd 0
+posAdd 0
+o 6
+suid 1,0
+)
+)
+uid 106,0
+)
+*16 (LogPort
+port (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "card_type"
+t "wire"
+b "[1:0]"
+eolc "// 0=UNKNOWN    , 1=SDv1    , 2=SDv2  , 3=SDHCv2"
+preAdd 0
+posAdd 0
+o 7
+suid 2,0
+)
+)
+uid 108,0
+)
+*17 (LogPort
+port (LogicalPort
+lang 5
+decl (Decl
+n "clk"
+t "wire"
+prec "// clock"
+preAdd 0
+posAdd 0
+o 2
+suid 3,0
+)
+)
+uid 110,0
+)
+*18 (LogPort
+port (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "file_found"
+t "reg"
+eolc "// 0=file not found, 1=file found"
+preAdd 0
+posAdd 0
+o 9
+suid 4,0
+)
+)
+uid 112,0
+)
+*19 (LogPort
+port (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "filesystem_type"
+t "wire"
+b "[1:0]"
+eolc "// 0=UNASSIGNED , 1=UNKNOWN , 2=FAT16 , 3=FAT32"
+preAdd 0
+posAdd 0
+o 8
+suid 5,0
+)
+)
+uid 114,0
+)
+*20 (LogPort
+port (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "outbyte"
+t "reg"
+b "[7:0]"
+eolc "// a byte of file content"
+preAdd 0
+posAdd 0
+o 11
+suid 6,0
+)
+)
+uid 116,0
+)
+*21 (LogPort
+port (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "outen"
+t "reg"
+prec "// file content data output (sync with clk)"
+eolc "// when outen=1, a byte of file content is read out from outbyte"
+preAdd 0
+posAdd 0
+o 10
+suid 7,0
+)
+)
+uid 118,0
+)
+*22 (LogPort
+port (LogicalPort
+lang 5
+decl (Decl
+n "rstn"
+t "wire"
+prec "// rstn active-low, 1:working, 0:reset"
+preAdd 0
+posAdd 0
+o 1
+suid 8,0
+)
+)
+uid 120,0
+)
+*23 (LogPort
+port (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "sdclk"
+t "wire"
+prec "// SDcard signals (connect to SDcard), this design do not use sddat1~sddat3."
+preAdd 0
+o 3
+suid 9,0
+)
+)
+uid 122,0
+)
+*24 (LogPort
+port (LogicalPort
+lang 5
+m 2
+decl (Decl
+n "sdcmd"
+t "wire"
+o 4
+suid 10,0
+)
+)
+uid 124,0
+)
+*25 (LogPort
+port (LogicalPort
+lang 5
+decl (Decl
+n "sddat0"
+t "wire"
+eolc "// FPGA only read SDDAT signal but never drive it"
+posAdd 0
+o 5
+suid 11,0
+)
+)
+uid 126,0
+)
+]
+)
+pdm (PhysicalDM
+displayShortBounds 1
+editShortBounds 1
+uid 152,0
+optionalChildren [
+*26 (Sheet
+sheetRow (SheetRow
+headerVa (MVa
+cellColor "49152,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+cellVa (MVa
+cellColor "65535,65535,65535"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+groupVa (MVa
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+emptyMRCItem *27 (MRCItem
+litem &1
+pos 11
+dimension 20
+)
+uid 154,0
+optionalChildren [
+*28 (MRCItem
+litem &2
+pos 0
+dimension 20
+uid 155,0
+)
+*29 (MRCItem
+litem &3
+pos 1
+dimension 23
+uid 156,0
+)
+*30 (MRCItem
+litem &4
+pos 2
+hidden 1
+dimension 20
+uid 157,0
+)
+*31 (MRCItem
+litem &15
+pos 0
+dimension 20
+uid 107,0
+)
+*32 (MRCItem
+litem &16
+pos 1
+dimension 20
+uid 109,0
+)
+*33 (MRCItem
+litem &17
+pos 2
+dimension 20
+uid 111,0
+)
+*34 (MRCItem
+litem &18
+pos 3
+dimension 20
+uid 113,0
+)
+*35 (MRCItem
+litem &19
+pos 4
+dimension 20
+uid 115,0
+)
+*36 (MRCItem
+litem &20
+pos 5
+dimension 20
+uid 117,0
+)
+*37 (MRCItem
+litem &21
+pos 6
+dimension 20
+uid 119,0
+)
+*38 (MRCItem
+litem &22
+pos 7
+dimension 20
+uid 121,0
+)
+*39 (MRCItem
+litem &23
+pos 8
+dimension 20
+uid 123,0
+)
+*40 (MRCItem
+litem &24
+pos 9
+dimension 20
+uid 125,0
+)
+*41 (MRCItem
+litem &25
+pos 10
+dimension 20
+uid 127,0
+)
+]
+)
+sheetCol (SheetCol
+propVa (MVa
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+textAngle 90
+)
+uid 158,0
+optionalChildren [
+*42 (MRCItem
+litem &5
+pos 0
+dimension 20
+uid 159,0
+)
+*43 (MRCItem
+litem &7
+pos 1
+dimension 50
+uid 160,0
+)
+*44 (MRCItem
+litem &8
+pos 2
+dimension 100
+uid 161,0
+)
+*45 (MRCItem
+litem &9
+pos 3
+dimension 50
+uid 162,0
+)
+*46 (MRCItem
+litem &10
+pos 4
+dimension 100
+uid 163,0
+)
+*47 (MRCItem
+litem &11
+pos 5
+dimension 60
+uid 164,0
+)
+*48 (MRCItem
+litem &12
+pos 6
+dimension 100
+uid 165,0
+)
+*49 (MRCItem
+litem &13
+pos 7
+dimension 50
+uid 166,0
+)
+*50 (MRCItem
+litem &14
+pos 8
+dimension 191
+uid 167,0
+)
+]
+)
+fixedCol 4
+fixedRow 2
+name "Ports"
+uid 153,0
+vaOverrides [
+]
+)
+]
+)
+uid 137,0
+)
+genericsCommonDM (CommonDM
+ldm (LogicalDM
+emptyRow *51 (LEmptyRow
+)
+uid 169,0
+optionalChildren [
+*52 (RefLabelRowHdr
+)
+*53 (TitleRowHdr
+)
+*54 (FilterRowHdr
+)
+*55 (RefLabelColHdr
+tm "RefLabelColHdrMgr"
+)
+*56 (RowExpandColHdr
+tm "RowExpandColHdrMgr"
+)
+*57 (GroupColHdr
+tm "GroupColHdrMgr"
+)
+*58 (NameColHdr
+tm "GenericNameColHdrMgr"
+)
+*59 (InitColHdr
+tm "GenericValueColHdrMgr"
+)
+*60 (EolColHdr
+tm "GenericEolColHdrMgr"
+)
+*61 (LogGeneric
+generic (GiElement
+name "FILE_NAME_LEN"
+value "11"
+)
+uid 128,0
+)
+*62 (LogGeneric
+generic (GiElement
+name "FILE_NAME"
+type "[52*8-1:0]"
+value "\"example.txt\""
+)
+uid 130,0
+)
+*63 (LogGeneric
+generic (GiElement
+name "CLK_DIV"
+type "[2:0]"
+value "3'd2"
+pr "// For example, if you want to read a file named \"HeLLo123.txt\", this parameter can be \"hello123.TXT\", \"HELLO123.txt\" or \"HEllo123.Txt\""
+apr 0
+)
+uid 132,0
+)
+*64 (LogGeneric
+generic (GiElement
+name "SIMULATE"
+value "0"
+pr "// when clk =  25~ 50MHz , set CLK_DIV = 3'd2,
+// when clk =  50~100MHz , set CLK_DIV = 3'd3,
+// when clk = 100~200MHz , set CLK_DIV = 3'd4,
+// ......"
+apr 0
+po "// 0:normal use.         1:only for simulation"
+apo 0
+e "// 0:normal use.         1:only for simulation"
+)
+uid 134,0
+)
+]
+)
+pdm (PhysicalDM
+displayShortBounds 1
+editShortBounds 1
+uid 179,0
+optionalChildren [
+*65 (Sheet
+sheetRow (SheetRow
+headerVa (MVa
+cellColor "49152,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+cellVa (MVa
+cellColor "65535,65535,65535"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+groupVa (MVa
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+emptyMRCItem *66 (MRCItem
+litem &51
+pos 4
+dimension 20
+)
+uid 181,0
+optionalChildren [
+*67 (MRCItem
+litem &52
+pos 0
+dimension 20
+uid 182,0
+)
+*68 (MRCItem
+litem &53
+pos 1
+dimension 23
+uid 183,0
+)
+*69 (MRCItem
+litem &54
+pos 2
+hidden 1
+dimension 20
+uid 184,0
+)
+*70 (MRCItem
+litem &61
+pos 0
+dimension 20
+uid 129,0
+)
+*71 (MRCItem
+litem &62
+pos 1
+dimension 20
+uid 131,0
+)
+*72 (MRCItem
+litem &63
+pos 2
+dimension 20
+uid 133,0
+)
+*73 (MRCItem
+litem &64
+pos 3
+dimension 20
+uid 135,0
+)
+]
+)
+sheetCol (SheetCol
+propVa (MVa
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+textAngle 90
+)
+uid 185,0
+optionalChildren [
+*74 (MRCItem
+litem &55
+pos 0
+dimension 20
+uid 186,0
+)
+*75 (MRCItem
+litem &57
+pos 1
+dimension 50
+uid 187,0
+)
+*76 (MRCItem
+litem &58
+pos 2
+dimension 163
+uid 188,0
+)
+*77 (MRCItem
+litem &59
+pos 3
+dimension 153
+uid 189,0
+)
+*78 (MRCItem
+litem &60
+pos 4
+dimension 363
+uid 190,0
+)
+]
+)
+fixedCol 3
+fixedRow 2
+name "Ports"
+uid 180,0
+vaOverrides [
+]
+)
+]
+)
+uid 168,0
+type 1
+)
+VExpander (VariableExpander
+vvMap [
+(vvPair
+variable "HDLDir"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hdl"
+)
+(vvPair
+variable "HDSDir"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds"
+)
+(vvPair
+variable "SideDataDesignDir"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds\\sd_file_reader\\symbol.sb.info"
+)
+(vvPair
+variable "SideDataUserDir"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds\\sd_file_reader\\symbol.sb.user"
+)
+(vvPair
+variable "SourceDir"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds"
+)
+(vvPair
+variable "appl"
+value "HDL Designer"
+)
+(vvPair
+variable "arch_name"
+value "symbol"
+)
+(vvPair
+variable "concat_file"
+value "concatenated"
+)
+(vvPair
+variable "config"
+value "%(unit)_%(view)_config"
+)
+(vvPair
+variable "d"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds\\sd_file_reader"
+)
+(vvPair
+variable "d_logical"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds\\sd_file_reader"
+)
+(vvPair
+variable "date"
+value "03.03.2025"
+)
+(vvPair
+variable "day"
+value "lun."
+)
+(vvPair
+variable "day_long"
+value "lundi"
+)
+(vvPair
+variable "dd"
+value "03"
+)
+(vvPair
+variable "entity_name"
+value "sd_file_reader"
+)
+(vvPair
+variable "ext"
+value "<TBD>"
+)
+(vvPair
+variable "f"
+value "symbol.sb"
+)
+(vvPair
+variable "f_logical"
+value "symbol.sb"
+)
+(vvPair
+variable "f_noext"
+value "symbol"
+)
+(vvPair
+variable "graphical_source_author"
+value "Axam"
+)
+(vvPair
+variable "graphical_source_date"
+value "03.03.2025"
+)
+(vvPair
+variable "graphical_source_group"
+value "UNKNOWN"
+)
+(vvPair
+variable "graphical_source_host"
+value "WE10628"
+)
+(vvPair
+variable "graphical_source_time"
+value "10:16:42"
+)
+(vvPair
+variable "group"
+value "UNKNOWN"
+)
+(vvPair
+variable "host"
+value "WE10628"
+)
+(vvPair
+variable "language"
+value "Verilog"
+)
+(vvPair
+variable "library"
+value "SDCard"
+)
+(vvPair
+variable "library_downstream_Concatenation"
+value "$HDS_PROJECT_DIR/../SDCard/concat"
+)
+(vvPair
+variable "library_downstream_ModelSimCompiler"
+value "$HDS_PROJECT_DIR/../SDCard/work"
+)
+(vvPair
+variable "mm"
+value "03"
+)
+(vvPair
+variable "module_name"
+value "sd_file_reader"
+)
+(vvPair
+variable "month"
+value "mars"
+)
+(vvPair
+variable "month_long"
+value "mars"
+)
+(vvPair
+variable "p"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds\\sd_file_reader\\symbol.sb"
+)
+(vvPair
+variable "p_logical"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\SDCard\\hds\\sd_file_reader\\symbol.sb"
+)
+(vvPair
+variable "package_name"
+value "<Undefined Variable>"
+)
+(vvPair
+variable "project_name"
+value "hds"
+)
+(vvPair
+variable "series"
+value "HDL Designer Series"
+)
+(vvPair
+variable "this_ext"
+value "sb"
+)
+(vvPair
+variable "this_file"
+value "symbol"
+)
+(vvPair
+variable "this_file_logical"
+value "symbol"
+)
+(vvPair
+variable "time"
+value "10:16:42"
+)
+(vvPair
+variable "unit"
+value "sd_file_reader"
+)
+(vvPair
+variable "user"
+value "Axam"
+)
+(vvPair
+variable "version"
+value "2019.2 (Build 5)"
+)
+(vvPair
+variable "view"
+value "symbol"
+)
+(vvPair
+variable "year"
+value "2025"
+)
+(vvPair
+variable "yy"
+value "25"
+)
+]
+)
+LanguageMgr "Verilog2001LangMgr"
+uid 136,0
+optionalChildren [
+*79 (SymbolBody
+uid 8,0
+optionalChildren [
+*80 (CptPort
+uid 51,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 52,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "51000,29625,51750,30375"
+)
+tg (CPTG
+uid 53,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 54,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "38000,29300,50000,30700"
+st "card_stat : [3:0]"
+ju 2
+blo "50000,30500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 55,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,11200,36500,12800"
+st "// status output (optional for user)
+output wire [3:0] card_stat; // show the sdcard initialize status"
+)
+thePort (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "card_stat"
+t "wire"
+b "[3:0]"
+prec "// status output (optional for user)"
+eolc "// show the sdcard initialize status"
+preAdd 0
+posAdd 0
+o 6
+suid 1,0
+)
+)
+)
+*81 (CptPort
+uid 56,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 57,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "51000,25625,51750,26375"
+)
+tg (CPTG
+uid 58,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 59,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "37700,25300,50000,26700"
+st "card_type : [1:0]"
+ju 2
+blo "50000,26500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 60,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,12800,43000,13600"
+st "output wire [1:0]  card_type; // 0=UNKNOWN    , 1=SDv1    , 2=SDv2  , 3=SDHCv2"
+)
+thePort (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "card_type"
+t "wire"
+b "[1:0]"
+eolc "// 0=UNKNOWN    , 1=SDv1    , 2=SDv2  , 3=SDHCv2"
+preAdd 0
+posAdd 0
+o 7
+suid 2,0
+)
+)
+)
+*82 (CptPort
+uid 61,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 62,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "24250,35625,25000,36375"
+)
+tg (CPTG
+uid 63,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 64,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "26000,35300,28400,36700"
+st "clk"
+blo "26000,36500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 65,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,6400,11000,8000"
+st "// clock
+input  wire clk;"
+)
+thePort (LogicalPort
+lang 5
+decl (Decl
+n "clk"
+t "wire"
+prec "// clock"
+preAdd 0
+posAdd 0
+o 2
+suid 3,0
+)
+)
+)
+*83 (CptPort
+uid 66,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 67,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "51000,31625,51750,32375"
+)
+tg (CPTG
+uid 68,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 69,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "42200,31300,50000,32700"
+st "file_found"
+ju 2
+blo "50000,32500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 70,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,14400,36000,15200"
+st "output reg         file_found; // 0=file not found, 1=file found"
+)
+thePort (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "file_found"
+t "reg"
+eolc "// 0=file not found, 1=file found"
+preAdd 0
+posAdd 0
+o 9
+suid 4,0
+)
+)
+)
+*84 (CptPort
+uid 71,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 72,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "51000,27625,51750,28375"
+)
+tg (CPTG
+uid 73,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 74,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "33300,27300,50000,28700"
+st "filesystem_type : [1:0]"
+ju 2
+blo "50000,28500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 75,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,13600,45500,14400"
+st "output wire [1:0]  filesystem_type; // 0=UNASSIGNED , 1=UNKNOWN , 2=FAT16 , 3=FAT32"
+)
+thePort (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "filesystem_type"
+t "wire"
+b "[1:0]"
+eolc "// 0=UNASSIGNED , 1=UNKNOWN , 2=FAT16 , 3=FAT32"
+preAdd 0
+posAdd 0
+o 8
+suid 5,0
+)
+)
+)
+*85 (CptPort
+uid 76,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 77,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "51000,35625,51750,36375"
+)
+tg (CPTG
+uid 78,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 79,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "39100,35300,50000,36700"
+st "outbyte : [7:0]"
+ju 2
+blo "50000,36500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 80,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,16800,30500,17600"
+st "output reg [7:0]   outbyte; // a byte of file content"
+)
+thePort (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "outbyte"
+t "reg"
+b "[7:0]"
+eolc "// a byte of file content"
+preAdd 0
+posAdd 0
+o 11
+suid 6,0
+)
+)
+)
+*86 (CptPort
+uid 81,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 82,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "51000,33625,51750,34375"
+)
+tg (CPTG
+uid 83,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 84,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "45500,33300,50000,34700"
+st "outen"
+ju 2
+blo "50000,34500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 85,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,15200,45000,16800"
+st "// file content data output (sync with clk)
+output reg outen; // when outen=1, a byte of file content is read out from outbyte"
+)
+thePort (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "outen"
+t "reg"
+prec "// file content data output (sync with clk)"
+eolc "// when outen=1, a byte of file content is read out from outbyte"
+preAdd 0
+posAdd 0
+o 10
+suid 7,0
+)
+)
+)
+*87 (CptPort
+uid 86,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 87,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "24250,33625,25000,34375"
+)
+tg (CPTG
+uid 88,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 89,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "26000,33300,29300,34700"
+st "rstn"
+blo "26000,34500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 90,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,4800,31000,6400"
+st "//                 rstn active-low, 1:working, 0:reset
+input  wire rstn;"
+)
+thePort (LogicalPort
+lang 5
+decl (Decl
+n "rstn"
+t "wire"
+prec "// rstn active-low, 1:working, 0:reset"
+preAdd 0
+posAdd 0
+o 1
+suid 8,0
+)
+)
+)
+*88 (CptPort
+uid 91,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 92,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "30625,23250,31375,24000"
+)
+tg (CPTG
+uid 93,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 94,0
+ro 270
+va (VaSet
+font "Verdana,12,0"
+)
+xt "30300,25000,31700,28900"
+st "sdclk"
+ju 2
+blo "31500,25000"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 95,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,8000,42000,9600"
+st "// SDcard signals (connect to SDcard), this design do not use sddat1~sddat3.
+output wire sdclk;"
+)
+thePort (LogicalPort
+lang 5
+m 1
+decl (Decl
+n "sdclk"
+t "wire"
+prec "// SDcard signals (connect to SDcard), this design do not use sddat1~sddat3."
+preAdd 0
+o 3
+suid 9,0
+)
+)
+)
+*89 (CptPort
+uid 96,0
+ps "OnEdgeStrategy"
+shape (Diamond
+uid 97,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "32625,23250,33375,24000"
+)
+tg (CPTG
+uid 98,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 99,0
+ro 270
+va (VaSet
+font "Verdana,12,0"
+)
+xt "32300,25000,33700,29800"
+st "sdcmd"
+ju 2
+blo "33500,25000"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 100,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,9600,16000,10400"
+st "inout  wire        sdcmd;"
+)
+thePort (LogicalPort
+lang 5
+m 2
+decl (Decl
+n "sdcmd"
+t "wire"
+o 4
+suid 10,0
+)
+)
+)
+*90 (CptPort
+uid 101,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 102,0
+ro 180
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "28625,23250,29375,24000"
+)
+tg (CPTG
+uid 103,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 104,0
+ro 270
+va (VaSet
+font "Verdana,12,0"
+)
+xt "28300,25000,29700,30200"
+st "sddat0"
+ju 2
+blo "29500,25000"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 105,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,10400,42000,11200"
+st "input  wire        sddat0; // FPGA only read SDDAT signal but never drive it"
+)
+thePort (LogicalPort
+lang 5
+decl (Decl
+n "sddat0"
+t "wire"
+eolc "// FPGA only read SDDAT signal but never drive it"
+posAdd 0
+o 5
+suid 11,0
+)
+)
+)
+]
+shape (Rectangle
+uid 213,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "25000,24000,51000,38000"
+)
+oxt "15000,6000,44000,26000"
+biTextGroup (BiTextGroup
+uid 10,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+first (Text
+uid 11,0
+va (VaSet
+font "Verdana,9,1"
+)
+xt "25300,39000,29400,40200"
+st "SDCard"
+blo "25300,40000"
+)
+second (Text
+uid 12,0
+va (VaSet
+font "Verdana,9,1"
+)
+xt "25300,40200,33700,41400"
+st "sd_file_reader"
+blo "25300,41200"
+)
+)
+gi *91 (GenericInterface
+uid 13,0
+ps "CenterOffsetStrategy"
+matrix (Matrix
+uid 14,0
+text (MLText
+uid 15,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "13000,42400,82500,52000"
+st "Parameter Declarations
+
+FILE_NAME_LEN 11                                                           
+FILE_NAME     \"example.txt\"                                                
+// For example, if you want to read a file named \"HeLLo123.txt\", this parameter can be \"hello123.TXT\", \"HELLO123.txt\" or \"HEllo123.Txt\"
+CLK_DIV       3'd2                                                         
+// when clk =  25~ 50MHz , set CLK_DIV = 3'd2,
+// when clk =  50~100MHz , set CLK_DIV = 3'd3,
+// when clk = 100~200MHz , set CLK_DIV = 3'd4,
+// ......
+SIMULATE      0             // 0:normal use.         1:only for simulation 
+// 0:normal use.         1:only for simulation"
+)
+header "Parameter Declarations"
+showHdrWhenContentsEmpty 1
+)
+elements [
+(GiElement
+name "FILE_NAME_LEN"
+value "11"
+)
+(GiElement
+name "FILE_NAME"
+type "[52*8-1:0]"
+value "\"example.txt\""
+)
+(GiElement
+name "CLK_DIV"
+type "[2:0]"
+value "3'd2"
+pr "// For example, if you want to read a file named \"HeLLo123.txt\", this parameter can be \"hello123.TXT\", \"HELLO123.txt\" or \"HEllo123.Txt\""
+apr 0
+)
+(GiElement
+name "SIMULATE"
+value "0"
+pr "// when clk =  25~ 50MHz , set CLK_DIV = 3'd2,
+// when clk =  50~100MHz , set CLK_DIV = 3'd3,
+// when clk = 100~200MHz , set CLK_DIV = 3'd4,
+// ......"
+apr 0
+po "// 0:normal use.         1:only for simulation"
+apo 0
+e "// 0:normal use.         1:only for simulation"
+)
+]
+)
+udl 1
+portInstanceVisAsIs 1
+)
+]
+bg "65535,65535,65535"
+grid (Grid
+origin "0,0"
+isVisible 0
+isActive 1
+xSpacing 1000
+xySpacing 1000
+xShown 1
+yShown 1
+color "65535,0,0"
+)
+packageList *92 (PackageList
+uid 48,0
+stg "VerticalLayoutStrategy"
+textVec [
+*93 (Text
+uid 49,0
+va (VaSet
+isHidden 1
+font "Verdana,9,1"
+)
+xt "20000,0,27600,1200"
+st "Package List"
+blo "20000,1000"
+)
+*94 (MLText
+uid 50,0
+va (VaSet
+isHidden 1
+)
+xt "20000,1200,37500,4800"
+st "LIBRARY ieee;
+  USE ieee.std_logic_1164.all;
+  USE ieee.numeric_std.all;"
+tm "PackageList"
+)
+]
+)
+windowSize "-8,-8,1928,1160"
+viewArea "-16233,-2175,62472,45748"
+cachedDiagramExtent "0,0,82500,52000"
+hasePageBreakOrigin 1
+pageBreakOrigin "-11000,0"
+defaultCommentText (CommentText
+shape (Rectangle
+layer 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+lineColor "0,0,32768"
+)
+xt "0,0,15000,5000"
+)
+text (MLText
+va (VaSet
+fg "0,0,32768"
+)
+xt "200,200,3200,1400"
+st "
+Text
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 4600
+visibleWidth 14600
+)
+)
+defaultRequirementText (RequirementText
+shape (ZoomableIcon
+layer 0
+va (VaSet
+vasetType 1
+fg "59904,39936,65280"
+lineColor "0,0,32768"
+)
+xt "0,0,1500,1750"
+iconName "reqTracerRequirement.bmp"
+iconMaskName "reqTracerRequirement.msk"
+)
+autoResize 1
+text (MLText
+va (VaSet
+fg "0,0,32768"
+font "arial,8,0"
+)
+xt "500,2150,1400,3150"
+st "
+Text
+"
+tm "RequirementText"
+wrapOption 3
+visibleHeight 1350
+visibleWidth 1100
+)
+)
+defaultPanel (Panel
+shape (RectFrame
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineColor "32768,0,0"
+lineWidth 3
+)
+xt "0,0,20000,20000"
+)
+title (TextAssociate
+ps "TopLeftStrategy"
+text (Text
+va (VaSet
+font "Verdana,9,1"
+)
+xt "1000,1000,5000,2200"
+st "Panel0"
+blo "1000,2000"
+tm "PanelText"
+)
+)
+)
+parentGraphicsRef (HdmGraphicsRef
+libraryName ""
+entityName ""
+viewName ""
+)
+defaultSymbolBody (SymbolBody
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "15000,6000,44000,26000"
+)
+biTextGroup (BiTextGroup
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+first (Text
+va (VaSet
+font "Verdana,9,1"
+)
+xt "26800,14800,32200,16000"
+st "<library>"
+blo "26800,15800"
+)
+second (Text
+va (VaSet
+font "Verdana,9,1"
+)
+xt "26800,16000,30700,17200"
+st "<cell>"
+blo "26800,17000"
+)
+)
+gi *95 (GenericInterface
+ps "CenterOffsetStrategy"
+matrix (Matrix
+text (MLText
+va (VaSet
+font "Courier New,8,0"
+)
+xt "0,12000,11500,12800"
+st "Generic Declarations"
+)
+header "Generic Declarations"
+showHdrWhenContentsEmpty 1
+)
+elements [
+]
+)
+portInstanceVisAsIs 1
+portInstanceVis (PortSigDisplay
+sIVOD 1
+)
+portVis (PortSigDisplay
+sIVOD 1
+)
+)
+defaultCptPort (CptPort
+ps "OnEdgeStrategy"
+shape (Triangle
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "0,0,750,750"
+)
+tg (CPTG
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "0,750,2900,2150"
+st "In0"
+blo "0,1950"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+va (VaSet
+font "Courier New,8,0"
+)
+)
+thePort (LogicalPort
+lang 5
+decl (Decl
+n "In0"
+t "wire"
+b "[15:0]"
+o 0
+)
+)
+)
+defaultCptPortBuffer (CptPort
+ps "OnEdgeStrategy"
+shape (Diamond
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "0,0,750,750"
+)
+tg (CPTG
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "0,750,5300,2150"
+st "Buffer0"
+blo "0,1950"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+va (VaSet
+font "Courier New,8,0"
+)
+)
+thePort (LogicalPort
+lang 5
+m 3
+decl (Decl
+n "Buffer0"
+t "wire"
+b "[15:0]"
+o 0
+)
+)
+)
+DeclarativeBlock *96 (SymDeclBlock
+uid 1,0
+stg "SymDeclLayoutStrategy"
+declLabel (Text
+uid 2,0
+va (VaSet
+font "Verdana,9,1"
+)
+xt "0,0,7400,1200"
+st "Declarations"
+blo "0,1000"
+)
+portLabel (Text
+uid 3,0
+va (VaSet
+font "Verdana,9,1"
+)
+xt "0,3600,3700,4800"
+st "Ports:"
+blo "0,4600"
+)
+externalLabel (Text
+uid 4,0
+va (VaSet
+font "Verdana,9,1"
+)
+xt "0,1200,8300,2400"
+st "External User:"
+blo "0,2200"
+)
+internalLabel (Text
+uid 6,0
+va (VaSet
+font "Verdana,9,1"
+)
+xt "0,2400,8200,3600"
+st "Internal User:"
+blo "0,3400"
+)
+externalText (MLText
+uid 5,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,2400,2000,2400"
+tm "SyDeclarativeTextMgr"
+)
+internalText (MLText
+uid 7,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "2000,3600,2000,3600"
+tm "SyDeclarativeTextMgr"
+)
+)
+lastUid 235,0
+activeModelName "Symbol"
+)
