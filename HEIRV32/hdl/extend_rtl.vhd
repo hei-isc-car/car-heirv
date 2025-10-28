@@ -5,7 +5,7 @@ BEGIN
     extend : process(input, src)
     begin
         case src is
-            when "00" => -- I-type
+            when "00" => -- I-type / jalr
                 extended <= (12 to 31 => input(31)) &
                     input(31 downto 20) after g_tExt;
             when "01" => -- S-types (stores)

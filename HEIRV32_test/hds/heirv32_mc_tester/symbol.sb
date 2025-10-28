@@ -67,7 +67,7 @@ m 1
 decl (Decl
 n "btns"
 t "std_ulogic_vector"
-b "(c_btnsNb -1 DOWNTO 0)"
+b "(g_dataWidth -1 DOWNTO 0)"
 o 4
 suid 17,0
 )
@@ -316,11 +316,11 @@ tm "GenericEolColHdrMgr"
 )
 *49 (LogGeneric
 generic (GiElement
-name "c_btnsNb"
-type "positive"
-value "2"
+name "g_clockFrequency"
+type "real"
+value "50.0E6"
 )
-uid 233,0
+uid 536,0
 )
 *50 (LogGeneric
 generic (GiElement
@@ -332,11 +332,11 @@ uid 481,0
 )
 *51 (LogGeneric
 generic (GiElement
-name "g_clockFrequency"
-type "real"
-value "50.0E6"
+name "g_dataWidth"
+type "positive"
+value "32"
 )
-uid 536,0
+uid 618,0
 )
 ]
 )
@@ -390,13 +390,13 @@ uid 99,0
 )
 *57 (MRCItem
 litem &49
-pos 0
+pos 1
 dimension 20
-uid 234,0
+uid 537,0
 )
 *58 (MRCItem
 litem &50
-pos 1
+pos 0
 dimension 20
 uid 482,0
 )
@@ -404,7 +404,7 @@ uid 482,0
 litem &51
 pos 2
 dimension 20
-uid 537,0
+uid 619,0
 )
 ]
 )
@@ -477,23 +477,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hdl"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb.info"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb.user"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds"
 )
 (vvPair
 variable "appl"
@@ -513,15 +513,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester"
 )
 (vvPair
 variable "date"
-value "03.07.2023"
+value "27.10.2025"
 )
 (vvPair
 variable "day"
@@ -533,7 +533,7 @@ value "lundi"
 )
 (vvPair
 variable "dd"
-value "03"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -557,11 +557,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "03.07.2023"
+value "27.10.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -569,11 +569,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:14:42"
+value "15:24:06"
 )
 (vvPair
 variable "group"
@@ -581,7 +581,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "language"
@@ -601,7 +601,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32_test/work"
 )
 (vvPair
 variable "mm"
-value "07"
+value "10"
 )
 (vvPair
 variable "module_name"
@@ -609,19 +609,19 @@ value "heirv32_mc_tester"
 )
 (vvPair
 variable "month"
-value "juil."
+value "oct."
 )
 (vvPair
 variable "month_long"
-value "juillet"
+value "octobre"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb"
+value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\HEIRV32_test\\hds\\heirv32_mc_tester\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -649,7 +649,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "09:14:42"
+value "15:24:06"
 )
 (vvPair
 variable "unit"
@@ -657,7 +657,7 @@ value "heirv32_mc_tester"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "version"
@@ -669,11 +669,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2023"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "23"
+value "25"
 )
 ]
 )
@@ -692,7 +692,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "28625,7250,29375,8000"
+xt "32625,7250,33375,8000"
 )
 tg (CPTG
 uid 385,0
@@ -704,10 +704,10 @@ ro 270
 va (VaSet
 font "Verdana,12,0"
 )
-xt "28300,9000,29700,12600"
+xt "32300,9000,33700,12600"
 st "btns"
 ju 2
-blo "29500,9000"
+blo "33500,9000"
 tm "CptPortNameMgr"
 )
 )
@@ -716,8 +716,9 @@ uid 387,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,3200,74000,4000"
-st "btns : OUT    std_ulogic_vector (c_btnsNb -1 DOWNTO 0) ;"
+xt "44000,3200,75500,4000"
+st "btns : OUT    std_ulogic_vector (g_dataWidth -1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -725,7 +726,7 @@ m 1
 decl (Decl
 n "btns"
 t "std_ulogic_vector"
-b "(c_btnsNb -1 DOWNTO 0)"
+b "(g_dataWidth -1 DOWNTO 0)"
 o 4
 suid 17,0
 )
@@ -765,7 +766,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,59000,4800"
-st "clk  : OUT    std_ulogic  ;"
+st "clk  : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -812,7 +814,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,59000,5600"
-st "en   : OUT    std_ulogic  ;"
+st "en   : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -859,7 +862,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,58000,6400"
-st "rst  : OUT    std_ulogic "
+st "rst  : OUT    std_ulogic 
+"
 )
 thePort (LogicalPort
 lang 11
@@ -907,7 +911,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,74500,3200"
-st "test : IN     std_ulogic_vector (testLength-1 DOWNTO 0) ;"
+st "test : IN     std_ulogic_vector (testLength-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -922,7 +927,7 @@ suid 21,0
 )
 ]
 shape (Rectangle
-uid 480,0
+uid 617,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -967,20 +972,15 @@ font "Courier New,8,0"
 xt "15000,17800,33500,21800"
 st "Generic Declarations
 
-c_btnsNb         positive 2       
 testLength       natural  32      
 g_clockFrequency real     50.0E6  
+g_dataWidth      positive 32      
 "
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
 )
 elements [
-(GiElement
-name "c_btnsNb"
-type "positive"
-value "2"
-)
 (GiElement
 name "testLength"
 type "natural"
@@ -990,6 +990,11 @@ value "32"
 name "g_clockFrequency"
 type "real"
 value "50.0E6"
+)
+(GiElement
+name "g_dataWidth"
+type "positive"
+value "32"
 )
 ]
 )
@@ -1025,7 +1030,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,47600,49000"
+xt "36200,48000,45600,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1374,9 +1379,9 @@ tm "PackageList"
 )
 ]
 )
-windowSize "96,54,1116,744"
-viewArea "-500,-500,70780,47560"
-cachedDiagramExtent "0,0,74500,49000"
+windowSize "-1372,-3,-350,687"
+viewArea "-500,-500,70960,47560"
+cachedDiagramExtent "0,0,75500,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
 defaultCommentText (CommentText
@@ -1648,6 +1653,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 537,0
-activeModelName "Symbol:GEN"
+lastUid 619,0
+activeModelName "Symbol:CDM"
 )

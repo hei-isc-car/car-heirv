@@ -6,10 +6,10 @@ add wave -noupdate -color Gray70 -label info /heirv32_mc_tb/U_tester/testInfo
 add wave -noupdate -color {Violet Red} -label {Program loop} /heirv32_mc_tb/U_tester/loopCounter
 add wave -noupdate -expand -group PC -color Green -label PC /heirv32_mc_tb/U_heirv32/PC
 add wave -noupdate -expand -group PC -color Green -label PCNext /heirv32_mc_tb/U_heirv32/PCNext
-add wave -noupdate -expand -group Instr/Data -color Gold -label ramContent /heirv32_mc_tb/U_heirv32/U_instrDataManager/U_instrDataMemory/U_bram/ramContent
-add wave -noupdate -expand -group Instr/Data -label addressIn /heirv32_mc_tb/U_heirv32/U_instrDataManager/U_instrDataMemory/U_bram/addressIn
-add wave -noupdate -expand -group Instr/Data -color Green -label readData /heirv32_mc_tb/U_heirv32/U_instrDataManager/U_instrDataMemory/readData
-add wave -noupdate -expand -group Instr/Data -color Green -label instruction /heirv32_mc_tb/U_heirv32/U_instrDataManager/U_instrForward/instruction
+add wave -noupdate -expand -group Instr/Data -color Gold -label ramContent /heirv32_mc_tb/U_heirv32/U_instrDataManagerSDCard/g1/U_progBram/U_instrDataMemory/U_bram/ramContent
+add wave -noupdate -expand -group Instr/Data -label addressIn /heirv32_mc_tb/U_heirv32/U_instrDataManagerSDCard/g1/U_progBram/U_instrDataMemory/U_bram/addressIn
+add wave -noupdate -expand -group Instr/Data -color Green -label readData /heirv32_mc_tb/U_heirv32/U_instrDataManagerSDCard/g1/U_progBram/U_instrDataMemory/readData
+add wave -noupdate -expand -group Instr/Data -color Green -label instruction /heirv32_mc_tb/U_heirv32/U_instrDataManagerSDCard/g1/U_progBram/U_instrForward/instruction
 add wave -noupdate -expand -group {Control Unit} -label state /heirv32_mc_tb/U_heirv32/U_controlUnit/U_mainFSM/current_state
 add wave -noupdate -expand -group {Control Unit} -color Green -label funct3 /heirv32_mc_tb/U_heirv32/U_controlUnit/funct3
 add wave -noupdate -expand -group {Control Unit} -color Green -label funct7 /heirv32_mc_tb/U_heirv32/U_controlUnit/funct7
@@ -52,4 +52,4 @@ configure wave -timeline 0
 configure wave -timelineunits ns
 update
 WaveRestoreZoom {0 ps} {4894171 ps}
-run 3400 ns
+run 4600ns

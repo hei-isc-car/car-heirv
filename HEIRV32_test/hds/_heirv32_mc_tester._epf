@@ -1,2 +1,2 @@
-DEFAULT_FILE atom heirv32_mc_tester_studentVersion.vhd
-DEFAULT_ARCHITECTURE atom studentVersion
+DEFAULT_FILE atom heirv32_mc_tester_test.vhd
+DEFAULT_ARCHITECTURE atom test
