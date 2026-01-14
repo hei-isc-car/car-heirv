@@ -248,6 +248,32 @@ LOCATE COMP "btns[0]" SITE "E6" ;   # PP1 23
 IOBUF  PORT "btns[0]" PULLMODE=UP ;
 #LOCATE COMP "PP1[25]" SITE "E7" ;  # PP1 25
 
+### PP1 - Demonstrator version with 8 leds PMOD + 4 buttons PMOD through splitter
+  # Since buttons polarity is inverted, need to change:
+  # - "bts <= USB_MB_RX & (30 downto c_btnsNb => '0') & btns(c_btnsNb-1 downto 0);" in E_IO block
+  # - "leds <= lds(31 downto 8) & lds(7 downto 0);" in E_IO block
+#LOCATE COMP "leds[3]" SITE "A9" ;   # PP1 1
+#LOCATE COMP "leds[7]" SITE "D10" ;  # PP1 2
+#LOCATE COMP "leds[2]" SITE "A10" ;  # PP1 3
+#LOCATE COMP "leds[6]" SITE "C10" ;  # PP1 4
+#LOCATE COMP "leds[1]" SITE "B10" ;  # PP1 5
+#LOCATE COMP "leds[5]" SITE "C12" ;  # PP1 6
+#LOCATE COMP "leds[0]" SITE "B12" ;  # PP1 7
+#LOCATE COMP "leds[4]" SITE "D13" ;  # PP1 8
+##LOCATE COMP "PP1[9]" SITE "A13" ;   # PP1 9
+##LOCATE COMP "PP1[11]" SITE "M5" ;   # PP1 11
+#LOCATE COMP "btns[0]" SITE "L5" ;   # PP1 13
+#IOBUF  PORT "btns[0]" PULLMODE=DOWN ;
+##LOCATE COMP "PP1[15]" SITE "K5" ;   # PP1 15
+#LOCATE COMP "btns[1]" SITE "H5" ;   # PP1 17
+#IOBUF  PORT "btns[1]" PULLMODE=DOWN ;
+##LOCATE COMP "PP1[19]" SITE "E8" ;   # PP1 19
+#LOCATE COMP "btns[2]" SITE "E5" ;   # PP1 21
+#IOBUF  PORT "btns[2]" PULLMODE=DOWN ;
+##LOCATE COMP "PP1[23]" SITE "E6" ;   # PP1 23
+#LOCATE COMP "btns[3]" SITE "E7" ;   # PP1 25
+#IOBUF  PORT "btns[3]" PULLMODE=DOWN ;
+
 
 ### PP2 ###
 LOCATE COMP "leds[19]" SITE "G3" ; # PP2 1 / ext_PM1_5
