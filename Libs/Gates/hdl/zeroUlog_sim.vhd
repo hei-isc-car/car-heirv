@@ -1,18 +1,16 @@
-/*
-  zeroUlog_sim.vhd
+-- zeroUlog_sim.vhd
 
-  Generate an std_ulogic_vector of '0's.
+-- Generate an std_ulogic_vector of '0's.
 
-  Interface:
-    -- Output
-    zero : out std_ulogic_vector(dataBitNb-1 downto 0); -- Output value
+-- Interface:
+--   -- Output
+--   zero : out std_ulogic_vector(dataBitNb-1 downto 0); -- Output value
 
-    -- Generics
-    dataBitNb : positive := 8;                          -- Number of bits of the output
+--   -- Generics
+--   dataBitNb : positive := 8;                          -- Number of bits of the output
 
-  Changelog:
-    14.01.2025 - AMA - First version
-*/
+-- Changelog:
+--   14.01.2025 - AMA - First version
 ARCHITECTURE sim OF zeroUlog IS
 BEGIN
 
