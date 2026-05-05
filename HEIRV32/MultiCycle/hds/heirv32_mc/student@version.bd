@@ -8866,6 +8866,7 @@ shape (OrthoPolyLine
 uid 1209,0
 va (VaSet
 vasetType 3
+lineWidth 2
 )
 xt "97750,98000,105000,98000"
 pts [
