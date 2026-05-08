@@ -11,7 +11,7 @@ BEGIN
       when "10" => ALUControl <= "---";
       when "00" => ALUControl <= "---";
       when others =>
-        if (funct3 = '1' and funct7 = '0') or funct3 = '0' then
+        if (funct3 = "111" and funct7 = '0') or funct3 = "000" then
           ALUControl <= "---";
         elsif funct7 = '1' then
           ALUControl <= "---";

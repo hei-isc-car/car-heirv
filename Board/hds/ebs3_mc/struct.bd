@@ -394,19 +394,19 @@ value "C:\\dev\\CAr\\car-heirv\\Prefs\\..\\Board\\hds\\ebs3_mc"
 )
 (vvPair
 variable "date"
-value "27.10.2025"
+value "08.05.2026"
 )
 (vvPair
 variable "day"
-value "lun."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "27"
+value "08"
 )
 (vvPair
 variable "entity_name"
@@ -434,7 +434,7 @@ value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "27.10.2025"
+value "08.05.2026"
 )
 (vvPair
 variable "graphical_source_group"
@@ -446,7 +446,7 @@ value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:46:31"
+value "15:12:27"
 )
 (vvPair
 variable "group"
@@ -474,7 +474,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "10"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -482,11 +482,11 @@ value "ebs3_mc"
 )
 (vvPair
 variable "month"
-value "oct."
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "octobre"
+value "mai"
 )
 (vvPair
 variable "p"
@@ -522,7 +522,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:46:31"
+value "15:12:27"
 )
 (vvPair
 variable "unit"
@@ -542,11 +542,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2025"
+value "2026"
 )
 (vvPair
 variable "yy"
-value "25"
+value "26"
 )
 ]
 )
@@ -9295,7 +9295,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "-1928,-259,8,789"
-viewArea "-2331,-2331,215971,111677"
+viewArea "-2378,-2378,209176,111574"
 cachedDiagramExtent "0,0,379449,250025"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -9319,7 +9319,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 7823,0
+lastUid 7902,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
